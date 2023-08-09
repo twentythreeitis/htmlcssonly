@@ -1,0 +1,116 @@
+/*Google Font Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: linear-gradient(45deg, lightblue 25%, purple 50%, pink 75%);
+}
+/*UPPER DIV WITH PHOTO*/
+
+.profile-card{
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.upper{
+    height: 40%;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    margin-top: 10%;
+}
+
+.image .photo{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+}
+
+/*LOWER DIV WITH SOCIALS*/
+
+.lower{
+    background-color: white;
+    height: 60%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lower h3{
+    margin-top: 10%;
+}
+
+.socials{
+    padding: 5px;
+}
+
+.socials i{
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.button .btn{
+    background-color: cornflowerblue;
+    padding: 0.7em 2em;
+    margin: 0.5rem;
+    border-radius: 24px;
+    border: 0;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button .btn:hover{
+    background-color: mediumblue;
+}
+
+.metrics{
+    display: flex;
+    flex-direction: row;
+}
+
+.bar{
+    margin-top: 3px;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+
+.bar:last-child{
+    border-right: none;
+}
+
+.bar i{
+    font-size: 14px;
+}
