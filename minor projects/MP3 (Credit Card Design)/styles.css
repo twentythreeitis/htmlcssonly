@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgb(153, 139, 242), rgb(133, 240, 94), rgb(255, 121, 121), rgb(92, 182, 250));
+    background: linear-gradient(135deg, rgb(74, 73, 78), rgb(79, 230, 244), rgb(247, 125, 125), rgb(2, 247, 222));
+    background
+}
+
+/*Primary Part*/
+.main-card{
+    height: 250px;
+    width: 450px;
+    display: block;
+    background: linear-gradient(45deg, rgb(5, 0, 36), rgb(79, 6, 112), rgb(76, 13, 131), rgb(4, 95, 164));
+    border-radius: 12px;
+}
+
+.logo{
+    height: 35%;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.firstchip{
+    margin: auto 0;
+    height: 4.1rem;
+    width: 5.5rem;
+    padding-left: 0.5rem;
+}
+
+.secondvisa{
+    margin: auto 0.7rem;
+    height: 1.8rem;
+    padding-right: 0.8rem;
+}
+
+/*Middle Part */
+.number{
+    height: 25%;
+    width: 450px;
+}
+
+.number h2{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto 0.5em;
+    padding-left: 0.5em;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+/*Last Part*/
+
+.name{
+    height: 40%;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+    color: whitesmoke;
+}
+
+.right-side{
+    margin-right: 1rem;
+}
+
+.card-holder{
+    font-size: 12px;
+    padding: 0.5em 0;
+    font-weight: normal;
+}
+
+.full-name{
+    font-weight: bold;
+}
