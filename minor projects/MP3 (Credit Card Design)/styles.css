@@ -23,6 +23,7 @@ body{
     width: 450px;
     display: block;
     background: linear-gradient(45deg, rgb(5, 0, 36), rgb(79, 6, 112), rgb(76, 13, 131), rgb(4, 95, 164));
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
     border-radius: 12px;
 }
 
