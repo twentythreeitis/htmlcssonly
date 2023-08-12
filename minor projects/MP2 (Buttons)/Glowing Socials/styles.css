@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.8), rgba(0,0,0));
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 60px;
+    font-size: 60px;
+}
+
+.bxl-facebook-circle:hover{
+    text-shadow: rgb(146, 255, 44) 0 0 30px;
+}
+
+.bxl-twitter:hover{
+    text-shadow: rgb(83, 166, 255) 0 0 30px;
+}
+
+.bxl-instagram-alt:hover{
+    text-shadow: rgb(250, 50, 166) 0 0 30px;
+}
+
+.bxl-linkedin-square:hover{
+    text-shadow: rgb(0, 231, 252) 0 0 30px;
+}
+
+.bxl-youtube:hover{
+    text-shadow: rgb(255, 65, 65) 0 0 30px;
+}
