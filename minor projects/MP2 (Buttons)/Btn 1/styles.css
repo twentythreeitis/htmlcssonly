@@ -23,7 +23,7 @@ label{
     cursor: pointer;
     box-shadow: inset 0px 5px 15px rgba(0,0,0,0.3), inset 0px -5px 15px rgba(255,255,255,0.3);
   }
-label:after{
+label:before{
     content: '';
     position: absolute;
     height: 160px;
@@ -35,7 +35,7 @@ label:after{
     transition: 0.5s;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   }
-input:checked ~ label:after{
+input:checked ~ label:before{
     left: 470px;
     transform: translateX(-100%);
     background: linear-gradient(180deg,#777,#3a3a3a);
@@ -54,6 +54,6 @@ input:checked ~ label{
 input:checked + label + .background{
     background: #242424;
   }
-input{
+/*input{
     display: none;
   }

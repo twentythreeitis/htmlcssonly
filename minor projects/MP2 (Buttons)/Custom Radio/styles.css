@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(114, 255, 168),rgb(130, 130, 248));
+}
+
+.container{
+    background-color: rgba(255,255,255,0.7);
+    height: 370px;
+    width: 500px;
+    display: block;
+    padding: 25px;
+    border-radius: 15px;
+    
+}
+
+legend{
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+}
+
+.onee, .twoo, .threee{
+    padding: 15px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+label{
+    height: 50px;
+    width: 80%;
+    font-size: 24px;
+    padding: 5px 0 5px 0;
+    
+}
+
+#top::after{
+    content:"100$/year";
+    display: block;
+    float: right;
+}
+
+#middle::after{
+    content: "200$/year";
+    display: block;
+    float: right;
+}
+
+#bottom::after{
+    content: "300$/year";
+    display: block;
+    float: right;
+}
+
+label:hover{
+    cursor: pointer;
+}
+.threee:hover{
+    background-color: rgb(255, 182, 255);
+    cursor: pointer;
+}
+.onee:hover{
+    background-color: rgb(255, 182, 255);
+    cursor: pointer;
+}
+.twoo:hover{
+    background-color: rgb(255, 182, 255);
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.7em;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: 120ms transform ease-in-out;
+}
