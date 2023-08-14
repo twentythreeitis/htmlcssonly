@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+:root{
+    --color: blue;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(15, 8, 8) 33%, rgb(49, 2, 2) 60%, rgb(7, 2, 36) 90%);
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    height: 50px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: black;
+    color: rgb(238, 220, 220);
+    border: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.behind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 57px;
+    width: 130px;
+    border-radius: 30px;  
+    cursor: pointer;  
+}
+
+.behind:hover{
+    animation: bg 2s linear infinite;
+}
+
+/*linear-gradient(90deg, red, blue,yellow, green, black);*/
+
+@keyframes bg{
+    0%{
+        box-shadow: 0 0 20px rgba(0, 167, 92, 0.5);
+        background: linear-gradient(60deg, red, blue,yellow, rgb(0, 128, 0), black);
+    }
+    10%{
+        box-shadow: 0 0 20px rgba(234, 255, 0, 0.5);
+        background: linear-gradient(90deg, red, blue,yellow, green, black);
+    }
+    20%{
+        box-shadow: 0 0 20px rgba(207, 43, 2, 0.5);
+        background: linear-gradient(120deg, red, blue,yellow, green, black);
+    }
+    30%{
+        box-shadow: 0 0 20px rgba(2, 223, 2, 0.5);
+        background: linear-gradient(150deg, red, blue,yellow, green, black);
+    }
+    40%{
+        box-shadow: 0 0 20px rgba(22, 0, 0, 0.5);
+        background: linear-gradient(180deg, red, blue,yellow, green, black);
+    }
+    50%{
+        box-shadow: 0 0 20px rgba(22, 0, 0, 0.5);
+        background: linear-gradient(210deg, red, blue,yellow, green, black);
+    }
+    60%{
+        box-shadow: 0 0 20px rgba(22, 0, 0, 0.5);
+        background: linear-gradient(240deg, red, blue,yellow, green, black);
+    }
+    70%{
+        box-shadow: 0 0 20px rgba(201, 15, 15, 0.5);
+        background: linear-gradient(270deg, red, blue,yellow, green, black);
+    }
+    80%{
+        box-shadow: 0 0 20px rgba(16, 143, 235, 0.5);
+        background: linear-gradient(300deg, red, blue,yellow, green, black);
+    }
+    90%{
+        box-shadow: 0 0 20px rgba(53, 7, 63, 0.5);
+        background: linear-gradient(330deg, red, blue,yellow, green, black);
+    }
+    100%{
+        box-shadow: 0 0 20px rgba(58, 1, 101, 0.5);
+        background: linear-gradient(360deg, red, blue,yellow, green, black);
+    }
+}
