@@ -23,6 +23,16 @@ body{
     align-items: center;
 }
 
+.behind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 57px;
+    width: 130px;
+    border-radius: 30px;  
+    cursor: pointer;  
+}
+
 .button{
     height: 50px;
     width: 120px;
@@ -36,19 +46,10 @@ body{
     cursor: pointer;
 }
 
-.behind{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 57px;
-    width: 130px;
-    border-radius: 30px;  
-    cursor: pointer;  
-}
-
 .behind:hover{
     animation: bg 2s linear infinite;
 }
+
 
 /*linear-gradient(90deg, red, blue,yellow, green, black);*/
 
