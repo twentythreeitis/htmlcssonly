@@ -13,7 +13,6 @@ body{
     align-items: center;
 }
 .round{
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,10 +88,10 @@ body{
 
 @keyframes motion{
         0% {
-            transform: rotate(0deg) translateY(150px) rotate(0deg);
+            transform: rotate(0deg) translateY(150px);
         }
         100% {
-            transform: rotate(360deg) translateY(150px) rotate(-360deg);
+            transform: rotate(360deg) translateY(150px);
         }
     }
 
