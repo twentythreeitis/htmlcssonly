@@ -1,12 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
-}
-
-:root{
-    --color: blue;
 }
 
 body{
@@ -49,9 +45,6 @@ body{
 .behind:hover{
     animation: bg 2s linear infinite;
 }
-
-
-/*linear-gradient(90deg, red, blue,yellow, green, black);*/
 
 @keyframes bg{
     0%{
