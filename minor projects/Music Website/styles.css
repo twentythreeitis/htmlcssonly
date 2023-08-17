@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.header{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 2px gray;
+}
+
+.logo{
+    margin: 0 10px;
+    height: 70px;
+    width: 40%;
+    padding: 5px;
+}
+
+#logoo{
+    height: 65px;
+    width: 70px;
+    object-fit:fill;
+}
+
+.list{
+    width: 60%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.list li{
+    padding: 1rem;
+    list-style: none;
+    font-size: 18px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.bg{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+}
+
+.para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    padding: 20px;
+    height: 300px;
+    width: 76%;
+    left: 14%;
+    color: white;
+}
+
+.para h1{
+    font-size: 4rem;
+    margin: 20px;
+}
+.para h3{
+    font-size: 2rem;
+    margin: 20px;
+}
+.para p{
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+    line-height: 2rem;
+}
+
+.background2{
+    top: -1px;
+    z-index: -1;
+}
+
+.subcategory2{
+    margin: 0;
+    color: white;
+
+}
