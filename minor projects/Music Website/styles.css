@@ -252,7 +252,13 @@ body{
     text-decoration: none;
     list-style: none;
     padding: 20px;
-    font-size: 30px;
+    font-size: 35px;
+}
+
+.socials .platforms li:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+    transition: all 0.2s ease-in-out;
 }
 
 .socials .platforms li i{
