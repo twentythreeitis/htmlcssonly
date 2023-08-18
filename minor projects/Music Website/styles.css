@@ -1,61 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lato&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Cookie&family=Lato&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 body{
-    height: 100vh;
+    height: 120vh;
     width: 100%;
 }
 
+/*HEADER SECTION BEGINS*/
+
 .header{
-    height: 75px;
+    height: 250px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 2px 2px gray;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .logo{
-    margin: 0 10px;
-    height: 70px;
-    width: 40%;
-    padding: 5px;
+    position: relative;
+    height: 200px;
+    width: 50%;
+    left: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #logoo{
-    height: 65px;
-    width: 70px;
-    object-fit:fill;
+    height: 180px;
+    width: 180px;
 }
 
+
+
 .list{
-    width: 60%;
-    float: right;
     display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .list li{
-    padding: 1rem;
+    padding: 2.5rem;
     list-style: none;
-    font-size: 18px;
+    font-size: 24px;
 }
+
+.list li:hover::before{
+    content: "_______";
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    top: 120px;
+    color: white;
+    cursor: pointer;
+}
+
 
 .nav-link{
     text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    color: white;
 }
 
-.bg{
+/*HEADER SECTION COMPLETE*/
+
+
+/*TRYING TO GIVE A VIDEO BACKGROUND AND AUDIO BACKGROUND TO THE MAIN SECTION*/
+
+.main video{
+    /** Simulationg background-size: cover */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-wrapper{
+    /* Telling our absolute positioned video to 
+  be relative to this element */
     position: relative;
-    height: 100vh;
+    height: 150vh;
+    width: 100%;
+    z-index: -1;
+
+    /* Will not allow the video to overflow the 
+  container */
+  overflow: hidden;
+
+  /* Centering the container's content vertically 
+  and horizontally */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aud audio{
+    display: none;
+}
+/*VIDEO ADDED*/
+
+
+.bg{
+    display: block;
+    position: relative;
+    height: 150vh;
     width: 100%;
     object-fit: cover;
     z-index: -1;
@@ -80,9 +139,19 @@ body{
     font-size: 4rem;
     margin: 20px;
 }
+
+.para h1::after{
+    content: "~the weeknd";
+    font-size: 12px;
+    font-style: italic;
+    height: 12px;
+    width: 30px;
+
+}
 .para h3{
     font-size: 2rem;
     margin: 20px;
+    font-style: italic;
 }
 .para p{
     text-align: center;
