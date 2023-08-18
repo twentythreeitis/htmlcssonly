@@ -22,7 +22,7 @@ body{
     align-items: center;
     position: absolute;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .logo{
@@ -89,7 +89,7 @@ body{
     /* Telling our absolute positioned video to 
   be relative to this element */
     position: relative;
-    height: 150vh;
+    height: 120vh;
     width: 100%;
     z-index: -1;
 
@@ -108,18 +108,9 @@ body{
 .aud audio{
     display: none;
 }
-/*VIDEO ADDED*/
+/*AUDIO AND VIDEO ADDED*/
 
-
-.bg{
-    display: block;
-    position: relative;
-    height: 150vh;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 1;
-}
+/*SECTION: SUBCATEGORY1*/
 
 .para{
     display: flex;
@@ -160,13 +151,137 @@ body{
     line-height: 2rem;
 }
 
-.background2{
-    top: -1px;
-    z-index: -1;
-}
+/* SECTION: SUBCATEGORY2 */
 
 .subcategory2{
-    margin: 0;
-    color: white;
+    width: 100%;
+}
 
+.background2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.bg{
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+    filter: brightness(20%);
+}
+
+.overlay-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -130px;
+    z-index: 1;
+}
+
+.biography{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    color: white;
+}
+
+.dp{
+    margin: 40px auto;
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+.biography h1{
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 24px auto;
+}
+
+.biography span{
+    font-size: 18px;
+    margin: 0 auto;    
+}
+
+.biography p{
+    margin: 20px auto;
+    text-align: justify;
+}
+.biography h1::before{
+    content: "a";
+    font-style: regular;
+    font-size: 52px;
+}
+
+.biography h1::after{
+    position: relative;
+    content: " .aka The Weeknd";
+    font-style: bold;
+    font-size: 16px;
+    text-transform: none;
+}
+
+.info{
+    margin: 40px auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*FOOTER CSS*/
+
+.second{
+    display: block;
+}
+.footer{
+    display: block;
+    width: 100%;
+    position: absolute;
+    margin: -170px auto;
+}
+
+.socials .platforms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials .platforms li{
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.socials .platforms li i{
+    color: white;
+}
+
+.tandc .footbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tandc .footbar li{
+    font-size: 24px;
+    list-style: none;
+    padding: 20px;
+}
+
+.tandc .footbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.tandc .footbar li:hover::before{
+    content: "_______";
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    top: 110px;
+    color: white;
+    cursor: pointer;
 }
