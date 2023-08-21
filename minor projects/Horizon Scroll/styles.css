@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.slider{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+/*SETTING UP THE SLIDE TRACK*/
+
+.slide-track{
+    display: flex;
+    width: calc(250px*12);
+}
+
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+img{
+    width: 100%;
+}
+
+/*GRADIENT SHADOWS*/
+
+.slider::before, .slider::after{
+    background: linear-gradient(270deg, white 0%, black 100%);
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before{
+    left: 0;
+    top: 0;
+}
+
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/*IMAGE HOVER EFFECT*/
+
+img:hover{
+    transform: translateZ(20px);
+    z-index: 1;
+}
