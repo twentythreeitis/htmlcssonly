@@ -7,6 +7,10 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     height: 120vh;
     width: 100%;
@@ -43,24 +47,28 @@ body{
 
 .list{
     display: flex;
-    width: 100%;
+    width: 70%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 0;
 }
 
 .list li{
-    padding: 2.5rem;
+    position: relative;
     list-style: none;
     font-size: 24px;
+    width: max-content;
+    letter-spacing: 2px;
 }
 
 .list li:hover::before{
-    content: "_______";
+    content: "";
     position: absolute;
-    height: 1px;
-    width: 10px;
-    top: 120px;
-    color: white;
+    height: 2px;
+    width: 100%;
+    background: white;
+    border-radius: 50%;
+    bottom: -5px;
     cursor: pointer;
 }
 
@@ -129,6 +137,7 @@ body{
 .para h1{
     font-size: 4rem;
     margin: 20px;
+    letter-spacing: 2px;
 }
 
 .para h1::after{
@@ -143,6 +152,7 @@ body{
     font-size: 1.5rem;
     margin: 20px;
     font-style: italic;
+    letter-spacing: 0.5em;
 }
 
 .para p{
@@ -150,19 +160,9 @@ body{
     font-size: 1.1rem;
     margin: 10px;
     line-height: 2rem;
+    letter-spacing: 2px;
 }
 
-/* SECTION: SUBCATEGORY2 */
-
-.subcategory2{
-    width: 100%;
-}
-
-.background2{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
 .bg{
     position: relative;
     height: 120vh;
@@ -170,16 +170,29 @@ body{
     object-fit: cover;
     z-index: -1;
     opacity: 1;
-    filter: brightness(20%);
 }
 
+/* SECTION: SUBCATEGORY2 */
+
+.subcategory2{
+    width: 100%;
+}
+.background2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.first{
+    filter: brightness(20%);
+}
 .overlay-text{
     width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
-    top: -130px;
     z-index: 1;
+    top: -130px;
 }
 
 .biography{
@@ -200,11 +213,13 @@ body{
     text-transform: uppercase;
     font-size: 36px;
     margin: 24px auto;
+    letter-spacing: 2px;
 }
 
 .biography span{
     font-size: 18px;
-    margin: 0 auto;    
+    margin: 0 auto;  
+    letter-spacing: 1.5px;  
 }
 
 .biography p{
@@ -231,16 +246,110 @@ body{
     font-size: 16px;
 }
 
+
+
+
+
+/*DISCOGRAPHY CSS BEGINS HERE*/
+
+.third{
+    display: block;
+    filter: brightness(20%);
+}
+
+.subcategory3{
+    width: 100%;
+    position: relative;
+}
+.background3{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.overlay-text2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: -190px;
+}
+.discography{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    color: rgb(237, 226, 226);
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.discography h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    margin: 1rem auto;
+    letter-spacing: 2px;
+}
+.discography h3{
+    font-size: 16px;
+    margin: 1rem auto;  
+    letter-spacing: 1.5px; 
+    font-weight: normal;
+}
+
+.discography h3 span{
+    color: silver;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    text-shadow: 3px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+.mixtape{
+    display: flex;
+    flex-direction: column;
+    color: rgb(237, 226, 226);
+}
+.mixtape h1{
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    margin: 1rem auto;
+}
+
+.mixtape h1 span{
+    font-size: 12px;
+    letter-spacing: 2ch;
+}
+
+.mixtape .trilogy{
+    width: 60%;
+    margin: 10px auto;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.mixtape img{
+    position: relative;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+
+
+
+
+
 /*FOOTER CSS*/
 
 .second{
     display: block;
+    filter: brightness(20%);
 }
 .footer{
     display: block;
     width: 100%;
     position: absolute;
-    margin: -170px auto;
+    margin: -180px auto;
 }
 
 .socials .platforms{
@@ -267,15 +376,18 @@ body{
 }
 
 .tandc .footbar{
+    margin: 5px auto;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .tandc .footbar li{
-    font-size: 24px;
+    position: relative;
+    font-size: 20px;
     list-style: none;
-    padding: 20px;
+    width: max-content;
 }
 
 .tandc .footbar li a{
@@ -284,11 +396,12 @@ body{
 }
 
 .tandc .footbar li:hover::before{
-    content: "_______";
+    content: "";
     position: absolute;
-    height: 1px;
-    width: 10px;
-    top: 110px;
-    color: white;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    border-radius: 50%;
+    background: white;
     cursor: pointer;
 }
