@@ -254,7 +254,7 @@ body{
 
 .third{
     display: block;
-    filter: brightness(100%);
+    filter: brightness(50%);
 }
 
 .subcategory3{
@@ -293,7 +293,7 @@ body{
 }
 .discography h3{
     font-size: 16px;
-    margin: 1rem auto;  
+    margin: 0.2rem auto;  
     letter-spacing: 1.5px; 
     font-weight: normal;
 }
@@ -313,8 +313,8 @@ body{
 
 .mixtape img{
     position: relative;
-    width: 10%;
-    margin: 1rem auto;
+    width: 15%;
+    margin: 0rem auto;
     box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 
@@ -329,10 +329,10 @@ body{
 .card{
     height: 325px;
     width: 350px;
-    background: white;
+    background: rgb(0, 0, 0);
     box-shadow: inset 0px 0px 35px black, 0px 0px 25px black;
     padding: 1em;
-    color: rgb(47, 47, 47);
+    color: rgb(255, 255, 255);
 }
 
 .card .heading{
@@ -342,7 +342,7 @@ body{
 }
 
 .gradient{
-    margin: 1px 0;
+    margin: 3px 0;
     height: 30px;
     width: 40%;
     position: relative;
