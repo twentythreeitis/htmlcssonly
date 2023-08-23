@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lato&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Cookie&family=Lato&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -268,7 +268,7 @@ body{
 .third{
     display: block;
     filter: brightness(100%);
-    height: 110vh;
+    height: 130vh;
     position: relative;
 }
 
@@ -303,12 +303,36 @@ body{
 
 .discography h1{
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 80px;
     margin: 1rem auto;
-    letter-spacing: 2px;
+    letter-spacing: 10px;
+    font-family: 'Bebas Neue', sans-serif;
 }
+
+.discography h1::after,.discography h1::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 10%;
+    background: white;
+    border-radius: 50%;
+}
+
+.discography h1::after{
+    right: 23%;
+    top: 12%;
+}
+
+.discography h1::before{
+    left: 23%;
+    top: 12%;
+}
+
+
+
+
 .discography h3{
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0.2rem auto;  
     letter-spacing: 1.5px; 
     font-weight: normal;
@@ -327,11 +351,13 @@ body{
     width: 100%;
 }
 
-.mixtape img{
+.mixtape h2{
     position: relative;
-    width: 15%;
-    margin: 0 auto 5rem auto;
-    box-shadow:  0px 0px 0px rgba(0, 0, 0, 0.7);
+    margin: 2rem auto;
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    z-index: 1;
 }
 
 /*THE TRILOGY GRID*/
@@ -353,7 +379,7 @@ body{
 }
 .card:hover{
     transform: translateZ(5px);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     /*box-shadow: inset 0px 0px 15px black, 0px 0px 10px black;*/
     transition: transform 300ms linear;
 }
@@ -469,25 +495,41 @@ body{
 
 /* 5 ALBUMS CARD CSS */
 
+
+.background4{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.overlay-text3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: -180px;
+}
+
+
 .studio{
     display: flex;
     flex-direction: column;
     color: rgb(255, 255, 255);
     width: 100%;
     position: relative;
-    margin: 16rem auto;
+    margin: 5rem auto;
 }
 
 .studio h2{
-    margin: 3rem auto 0px auto;
-}
-
-
-.studio img{
     position: relative;
-    width: 15%;
-    margin: 5rem auto;
-    box-shadow:  0px 0px 0px rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    z-index: 1;
 }
 
 
@@ -495,116 +537,9 @@ body{
 
 
 
-.thefive{
-    width: max-content;
-    margin: 5rem auto;
-    display: flex;
-    justify-content: space-around;
-    perspective: 350px;
-}
 
 
 
-.gradient2{
-    margin: 3px 0;
-    height: 30px;
-    width: 40%;
-    position: relative;
-}
-
-.left1{
-    background: linear-gradient(90deg, red , black);
-}
-
-.left2{
-    background: linear-gradient(90deg, red , black);
-}
-
-.middle1{
-    background: linear-gradient(90deg, gray , black);
-}
-
-.right1{
-    background: linear-gradient(90deg, yellow , rgb(1, 202, 1), rgb(255, 89, 0) ,rgb(74, 74, 158), skyblue);
-}
-
-.right2{
-    background: linear-gradient(90deg, yellow , rgb(1, 202, 1), rgb(255, 89, 0) ,rgb(74, 74, 158), skyblue);
-}
-
-.gradient2::after{
-    content: "";
-    position: absolute;
-    left: 6.2em;
-    height: 30px;
-    width: 60%;
-    font-size: 18px;
-    display: grid;
-    align-items: center;
-    font-weight: bold;
-}
-
-.middle1::after{
-    content:"HouseOfBalloons";
-}
-.left1::after{
-    content: "EchoesOfSilence";
-}
-.left2::after{
-    content: "EchoesOfSilence";
-}
-.right1::after{
-    content: "Thursday";
-}
-.right2::after{
-    content: "Thursday";
-}
-
-.kissland p{
-    font-size: .55em;
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    line-height: 10px;
-    margin: 1px 0;
-    cursor:default;
-}
-.bbtm p{
-    font-size: .55em;
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    line-height: 10px;
-    margin: 1px 0;
-    cursor:default;
-}
-.starboy p{
-    font-size: .55em;
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    line-height: 10px;
-    margin: 1px 0;
-    cursor:default;
-}
-.afterhours p{
-    font-size: .55em;
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    line-height: 10px;
-    margin: 1px 0;
-    cursor:default;
-}
-.dawnfm p{
-    font-size: .55em;
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    line-height: 10px;
-    margin: 1px 0;
-    cursor:default;
-}
-
-.albumart img{
-    width: 100%;
-    object-fit: cover;
-}
 
 
 
