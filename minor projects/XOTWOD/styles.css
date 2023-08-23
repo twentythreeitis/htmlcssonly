@@ -267,7 +267,7 @@ body{
 
 .third{
     display: block;
-    filter: brightness(100%);
+    filter: brightness(70%);
     height: 130vh;
     position: relative;
 }
@@ -492,6 +492,7 @@ body{
     display: block;
     height: 130vh;
     width: 100%;
+    filter: brightness(60%);
 }
 
 .background4{
@@ -538,19 +539,88 @@ body{
     width: 100%;
 }
 .box{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     position: relative;
-    height: 300px;
+    height: max-content;
     width: 60%;
     border: 1px solid black;
-    margin: 2rem 0;
+    margin: 3rem 0;
+}
+
+/*INVERTING THE GRID TEMPLATE IN OPPOSITE ORDER ONE AFTER THE OTHER*/
+.box:nth-child(even){
+    grid-template-columns: 1fr 2fr;
+}
+
+.coverart{
+    display: flex;
+    flex-direction: column;
+}
+
+.namealbum{
+    height: max-content;
+    width: 100%;
+    z-index: 1;
+}
+
+/*PARTICULAR KISSLAND CSS*/
+
+.kissland{
+    border: none;
+}
+
+.kissland:hover > img{
+    width: 95%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    opacity: 1;
 }
 
 
+.kissland:hover > .coverart{
+    transform: translateX(4rem);
+    transition: transform 0.5s linear;
+}
+.kissland img{
+    height: 400px;
+    width: 95%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    opacity: 0.5;
+}
+
+.kl{
+    position: relative;
+    left: -5rem;
+    margin: auto auto;
+}
+
+.kl h1:hover{
+
+}
+
+.kl h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 92px;
+} 
+
+.kl .songs{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 4rem;
+    letter-spacing: 1.5px;
+}
 
 
+/*PARTICULAR BBTM CSS*/
 
-
-
+.bbtm img{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
 
 
 
