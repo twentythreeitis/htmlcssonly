@@ -59,6 +59,7 @@ body{
     font-size: 24px;
     width: max-content;
     letter-spacing: 2px;
+    cursor:default;
 }
 
 .list li:hover::before{
@@ -69,13 +70,14 @@ body{
     background: white;
     border-radius: 50%;
     bottom: -5px;
-    cursor: pointer;
+    cursor:default;
 }
 
 
 .nav-link{
     text-decoration: none;
     color: white;
+    cursor:default;
 }
 
 /*HEADER SECTION COMPLETE*/
@@ -97,7 +99,7 @@ body{
     /* Telling our absolute positioned video to 
   be relative to this element */
     position: relative;
-    height: 120vh;
+    height: 110vh;
     width: 100%;
     z-index: -1;
 
@@ -132,12 +134,14 @@ body{
     width: 76%;
     left: 14%;
     color: white;
+    cursor:default;
 }
 
 .para h1{
     font-size: 4rem;
     margin: 20px;
     letter-spacing: 2px;
+    cursor:default;
 }
 
 .para h1::after{
@@ -146,6 +150,7 @@ body{
     font-style: italic;
     height: 12px;
     width: 30px;
+    cursor:default;
 
 }
 .para h3{
@@ -153,6 +158,7 @@ body{
     margin: 20px;
     font-style: italic;
     letter-spacing: 0.5em;
+    cursor:default;
 }
 
 .para p{
@@ -161,6 +167,7 @@ body{
     margin: 10px;
     line-height: 2rem;
     letter-spacing: 2px;
+    cursor:default;
 }
 
 .bg{
@@ -214,22 +221,26 @@ body{
     font-size: 36px;
     margin: 24px auto;
     letter-spacing: 2px;
+    cursor:default;
 }
 
 .biography span{
     font-size: 18px;
     margin: 0 auto;  
-    letter-spacing: 1.5px;  
+    letter-spacing: 1.5px; 
+    cursor:default; 
 }
 
 .biography p{
     margin: 25px auto;
     text-align: justify;
+    cursor:default;
 }
 .biography h1::before{
     content: "a";
     font-style: regular;
     font-size: 52px;
+    cursor:default;
 }
 
 .biography h1::after{
@@ -238,12 +249,14 @@ body{
     font-style: bold;
     font-size: 12px;
     text-transform: none;
+    cursor:default;
 }
 
 .info{
     margin: 40px auto;
     text-align: center;
     font-size: 16px;
+    cursor:default;
 }
 
 
@@ -254,7 +267,9 @@ body{
 
 .third{
     display: block;
-    filter: brightness(50%);
+    filter: brightness(100%);
+    height: 110vh;
+    position: relative;
 }
 
 .subcategory3{
@@ -274,7 +289,7 @@ body{
     align-items: center;
     position: absolute;
     z-index: 1;
-    top: -300px;
+    top: -400px;
 }
 .discography{
     display: flex;
@@ -283,6 +298,7 @@ body{
     color: rgb(237, 226, 226);
     text-align: center;
     margin: 1rem auto;
+    cursor:default;
 }
 
 .discography h1{
@@ -314,8 +330,8 @@ body{
 .mixtape img{
     position: relative;
     width: 15%;
-    margin: 0rem auto;
-    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.7);
+    margin: 0 auto 5rem auto;
+    box-shadow:  0px 0px 0px rgba(0, 0, 0, 0.7);
 }
 
 /*THE TRILOGY GRID*/
@@ -325,20 +341,27 @@ body{
     margin: 1rem auto;
     display: flex;
     justify-content: space-around;
+    perspective: 350px;
 }
 .card{
     height: 325px;
     width: 350px;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 1);
     box-shadow: inset 0px 0px 35px black, 0px 0px 25px black;
     padding: 1em;
     color: rgb(255, 255, 255);
 }
-
+.card:hover{
+    transform: translateZ(5px);
+    background: rgba(0, 0, 0, 0.5);
+    /*box-shadow: inset 0px 0px 15px black, 0px 0px 10px black;*/
+    transition: transform 300ms linear;
+}
 .card .heading{
     font-weight: bold;
     font-size: 28px;
     letter-spacing: -1px;
+    cursor:default;
 }
 
 .gradient{
@@ -385,6 +408,7 @@ body{
     letter-spacing: -0.5px;
     line-height: 10px;
     margin: 1px 0;
+    cursor:default;
 }
 
 .hob p{
@@ -393,6 +417,7 @@ body{
     letter-spacing: -0.5px;
     line-height: 10px;
     margin: 1px 0;
+    cursor:default;
 }
 
 .thursday p{
@@ -401,12 +426,199 @@ body{
     letter-spacing: -0.5px;
     line-height: 10px;
     margin: 1px 0;
+    cursor:default;
 }
 
 .albumart img{
     width: 100%;
     object-fit: cover;
 }
+
+/*MIXTAPE SPOTIFY CSS*/
+
+.mixtape-spotify{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.mixtape-spotify .embed{
+    position: absolute;
+    top: 3rem;
+    width: 22%;
+}
+
+
+.thurs{
+    right: 11.7rem;
+}
+
+.house{
+    align-items: center;
+}
+
+.echo{
+    left: 11.7rem;
+}
+
+
+
+
+/* 5 ALBUMS CARD CSS */
+
+.studio{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    position: relative;
+    margin: 16rem auto;
+}
+
+.studio h2{
+    margin: 3rem auto 0px auto;
+}
+
+
+.studio img{
+    position: relative;
+    width: 15%;
+    margin: 5rem auto;
+    box-shadow:  0px 0px 0px rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+.thefive{
+    width: max-content;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-around;
+    perspective: 350px;
+}
+
+
+
+.gradient2{
+    margin: 3px 0;
+    height: 30px;
+    width: 40%;
+    position: relative;
+}
+
+.left1{
+    background: linear-gradient(90deg, red , black);
+}
+
+.left2{
+    background: linear-gradient(90deg, red , black);
+}
+
+.middle1{
+    background: linear-gradient(90deg, gray , black);
+}
+
+.right1{
+    background: linear-gradient(90deg, yellow , rgb(1, 202, 1), rgb(255, 89, 0) ,rgb(74, 74, 158), skyblue);
+}
+
+.right2{
+    background: linear-gradient(90deg, yellow , rgb(1, 202, 1), rgb(255, 89, 0) ,rgb(74, 74, 158), skyblue);
+}
+
+.gradient2::after{
+    content: "";
+    position: absolute;
+    left: 6.2em;
+    height: 30px;
+    width: 60%;
+    font-size: 18px;
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+}
+
+.middle1::after{
+    content:"HouseOfBalloons";
+}
+.left1::after{
+    content: "EchoesOfSilence";
+}
+.left2::after{
+    content: "EchoesOfSilence";
+}
+.right1::after{
+    content: "Thursday";
+}
+.right2::after{
+    content: "Thursday";
+}
+
+.kissland p{
+    font-size: .55em;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 10px;
+    margin: 1px 0;
+    cursor:default;
+}
+.bbtm p{
+    font-size: .55em;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 10px;
+    margin: 1px 0;
+    cursor:default;
+}
+.starboy p{
+    font-size: .55em;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 10px;
+    margin: 1px 0;
+    cursor:default;
+}
+.afterhours p{
+    font-size: .55em;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 10px;
+    margin: 1px 0;
+    cursor:default;
+}
+.dawnfm p{
+    font-size: .55em;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 10px;
+    margin: 1px 0;
+    cursor:default;
+}
+
+.albumart img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
