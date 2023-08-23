@@ -267,7 +267,7 @@ body{
 
 .third{
     display: block;
-    filter: brightness(70%);
+    filter: brightness(40%);
     height: 130vh;
     position: relative;
 }
@@ -492,7 +492,14 @@ body{
     display: block;
     height: 130vh;
     width: 100%;
-    filter: brightness(60%);
+    filter: brightness(40%);
+}
+
+.fifth{
+    display: block;
+    height: 130vh;
+    width: 100%;
+    filter: brightness(20%);
 }
 
 .background4{
@@ -524,7 +531,7 @@ body{
 
 .studio h2{
     position: relative;
-    margin: 0 auto 4rem auto;
+    margin: 0 auto 2rem auto;
     font-size: 45px;
     letter-spacing: 5px;
     font-family: 'Bebas Neue', sans-serif;
@@ -578,8 +585,14 @@ body{
 }
 
 
-.kissland:hover > .coverart{
+.kissland:hover > .coverart h1{
     transform: translateX(4rem);
+    transition: transform 0.5s linear;
+}
+
+.kissland:hover > .coverart .songs{
+    opacity: 1;
+    transform: translateX(0rem);
     transition: transform 0.5s linear;
 }
 .kissland img{
@@ -587,7 +600,8 @@ body{
     width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    opacity: 0.5;
+    opacity: 0.7;
+    filter: grayscale(50%);
 }
 
 .kl{
@@ -596,16 +610,23 @@ body{
     margin: auto auto;
 }
 
-.kl h1:hover{
-
-}
-
 .kl h1{
+    position: relative;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 92px;
 } 
 
+.kl h1::after{
+    content: "2013";
+    position: absolute;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+} 
+
+
+
 .kl .songs{
+    opacity: 0.6;
     font-size: 18px;
     text-transform: uppercase;
     margin-left: 4rem;
@@ -615,14 +636,214 @@ body{
 
 /*PARTICULAR BBTM CSS*/
 
+.bbtm{
+    border: none;
+}
+
 .bbtm img{
-    position: relative;
-    height: 400px;
+    height: 500px;
     width: 100%;
     object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
+    filter: grayscale(50%);
+    z-index: -1;
+}
+
+.bbtm:hover > img{
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    opacity: 1;
 }
 
 
+.bbtm:hover > h1{
+    transform: translateX(-4rem);
+    transition: transform 0.5s linear;
+}
+
+.bbtm:hover > .coverart .songs{
+    opacity: 1;
+    transform: translateX(0rem);
+    transition: transform 0.5s linear;
+}
+
+.bb{
+    position: relative;
+    left: 0rem;
+    bottom: -9rem;
+}
+
+.box:nth-child(2){
+    grid-template-columns: 1fr 2fr;
+}
+
+
+.bbtm h1{
+    position: absolute;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 84px;
+    left: 4rem;
+    top: 2rem;
+}
+
+.bbtm h1::after{
+    content: "2015";
+    position: absolute;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+} 
+
+
+
+.bb .songs{
+    opacity: 0.6;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    letter-spacing: 1.5px;
+    text-align: right;
+}
+
+
+
+
+
+/*STARBOY CSS*/
+
+.starboy{
+    border: none;
+}
+
+.starboy:hover > img{
+    width: 95%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+
+.starboy:hover > .coverart h1{
+    transform: translateX(4rem);
+    transition: transform 0.5s linear;
+}
+
+.starboy:hover > .coverart .songs{
+    opacity: 1;
+    transform: translateX(0rem);
+    transition: transform 0.5s linear;
+}
+.starboy img{
+    height: 500px;
+    width: 95%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    opacity: 0.9;
+    filter: grayscale(0%);
+}
+
+.sb{
+    position: relative;
+    left: -5rem;
+    margin: auto auto;
+}
+
+.sb h1{
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 92px;
+} 
+
+.sb h1::after{
+    content: "2016";
+    position: absolute;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+} 
+
+
+
+.sb .songs{
+    opacity: 0.6;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 4rem;
+    letter-spacing: 1.5px;
+}
+
+
+/*AFTER HOURS CSS*/
+
+.afterhours{
+    border: none;
+}
+
+.afterhours img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
+    filter: grayscale(50%);
+    z-index: -1;
+}
+
+.afterhours:hover > img{
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+
+.afterhours:hover > h1{
+    transform: translateX(-4rem);
+    transition: transform 0.5s linear;
+}
+
+.afterhours:hover > .coverart .songs{
+    opacity: 1;
+    transform: translateX(0rem);
+    transition: transform 0.5s linear;
+}
+
+.ah{
+    position: relative;
+    left: 0rem;
+    bottom: -9rem;
+}
+
+.box:nth-child(4){
+    grid-template-columns: 1fr 2fr;
+}
+
+
+.ah h1{
+    position: absolute;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 84px;
+    left: 4rem;
+    top: 2rem;
+}
+
+.ah h1::after{
+    content: "2015";
+    position: absolute;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+} 
+
+
+
+.ah .songs{
+    opacity: 0.6;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    letter-spacing: 1.5px;
+    text-align: right;
+}
 
 
 
