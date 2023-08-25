@@ -945,7 +945,6 @@ body{
 }
 
 .year{
-    background-color: rgba(0, 0, 0, 0.1);
     display: block;
     height: 300px;
     width: 100%;
@@ -956,6 +955,12 @@ body{
 }
 
 .early:hover > h2{
+    opacity: 0;
+}
+.mid:hover > h2{
+    opacity: 0;
+}
+.lately:hover > h2{
     opacity: 0;
 }
 
@@ -981,10 +986,23 @@ body{
 
 .slider{
     display: inline-block;
-    animation: 7s slideright linear infinite;
+    animation: 25s slideleft linear infinite;
+}
+
+.rightwing{
+    animation: 25s slideright linear infinite;
 }
 
 @keyframes slideright{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideleft{
     from{
         transform: translateX(0px);
     }
@@ -999,7 +1017,6 @@ body{
     margin: 0 1rem;
 }
 
-/*ADDING OVERLAY TEXT TO EACH IMG*/
 
 
 
