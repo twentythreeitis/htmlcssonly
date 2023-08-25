@@ -938,16 +938,69 @@ body{
 .grid-parent{
     height: 100%;
     width: 80%;
-    background-color: aqua;
     margin: 0 auto;
     display: grid;
     grid-template-rows: 3;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .year{
-    background-color: yellow;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: block;
+    height: 300px;
+    width: 100%;
+    margin: 1rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
 }
+
+.early:hover > h2{
+    opacity: 0;
+}
+
+.filter{
+    font-size: 64px;
+    position: absolute;
+    letter-spacing: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    left: 0; 
+    right: 0; 
+    top: 35%;
+    margin-left: auto; 
+    margin-right: auto;
+    z-index: 1;
+    color: white;
+    width: max-content;
+}
+
+
+.grid-container:hover .slider{
+    animation-play-state: paused;
+}
+
+.slider{
+    display: inline-block;
+    animation: 7s slideright linear infinite;
+}
+
+@keyframes slideright{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.slider img{
+    height: 300px;    
+    object-fit: cover;
+    margin: 0 1rem;
+}
+
+/*ADDING OVERLAY TEXT TO EACH IMG*/
+
 
 
 
