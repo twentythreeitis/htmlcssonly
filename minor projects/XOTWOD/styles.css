@@ -886,11 +886,71 @@ body{
 
 .df .songs{
     opacity: 0.6;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     margin-left: 4rem;
     letter-spacing: 1.5px;
 }
+
+
+/*ACHIEVEMENTS CSS*/
+
+.subcategory4{
+    position: relative;
+    top: 5rem;
+    height: 150vh;
+    width: 100%;
+}
+
+.subcategory4 h1{
+    color: rgb(237, 226, 226);
+    width: 80%;
+    position: relative;
+    margin: 5rem auto 5rem auto;
+    text-align: center;
+    cursor:default;
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.subcategory4 h1:hover::before,.subcategory4 h1:hover::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 10%;
+    background: white;
+    border-radius: 50%;
+    color: black;
+}
+
+.subcategory4 h1:hover::before{
+    left: 16%;
+    top: 3rem;
+}
+
+.subcategory4 h1:hover::after{
+    top: 3rem;
+    right: 16%;
+}
+
+.grid-parent{
+    height: 100%;
+    width: 80%;
+    background-color: aqua;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 3;
+    gap: 1rem;
+}
+
+.year{
+    background-color: yellow;
+}
+
+
+
 
 
 
