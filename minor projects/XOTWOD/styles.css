@@ -83,16 +83,21 @@ body{
 /*HEADER SECTION COMPLETE*/
 
 
-/*TRYING TO GIVE A VIDEO BACKGROUND AND AUDIO BACKGROUND TO THE MAIN SECTION*/
+/*TRYING TO GIVE A VIDEO BACKGROUND TO THE MAIN SECTION*/
+
+.main{
+    background: url("https://www.youtube.com/watch?v=Is14IzzmfuM") repeat fixed;
+}
 
 .main video{
     /** Simulationg background-size: cover */
     object-fit: cover;
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    filter: brightness(40%);
 }
 
 .video-wrapper{
@@ -115,10 +120,6 @@ body{
   justify-content: center;
 }
 
-.aud audio{
-    display: none;
-}
-/*AUDIO AND VIDEO ADDED*/
 
 /*SECTION: SUBCATEGORY1*/
 
@@ -177,6 +178,7 @@ body{
     object-fit: cover;
     z-index: -1;
     opacity: 1;
+    
 }
 
 /* SECTION: SUBCATEGORY2 */
@@ -484,10 +486,8 @@ body{
     left: 11.7rem;
 }
 
+/*BACKGROUND BACKGROUND*/
 
-
-
-/* 5 ALBUMS CARD CSS */
 .fourth{
     display: block;
     height: 130vh;
@@ -501,6 +501,18 @@ body{
     width: 100%;
     filter: brightness(20%);
 }
+
+.sixth{
+    display: block;
+    height: 130vh;
+    width: 100%;
+    filter: brightness(30%);
+}
+
+
+
+/* 5 ALBUMS CARD CSS */
+
 
 .background4{
     display: flex;
@@ -675,10 +687,6 @@ body{
     bottom: -9rem;
 }
 
-.box:nth-child(2){
-    grid-template-columns: 1fr 2fr;
-}
-
 
 .bbtm h1{
     position: absolute;
@@ -814,21 +822,16 @@ body{
     bottom: -9rem;
 }
 
-.box:nth-child(4){
-    grid-template-columns: 1fr 2fr;
-}
-
-
-.ah h1{
+.afterhours h1{
     position: absolute;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 84px;
-    left: 4rem;
+    font-size: 92px;
+    left: 1rem;
     top: 2rem;
 }
 
-.ah h1::after{
-    content: "2015";
+.afterhours h1::after{
+    content: "2020";
     position: absolute;
     font-size: 18px;
     letter-spacing: 1.5px;
@@ -844,6 +847,71 @@ body{
     letter-spacing: 1.5px;
     text-align: right;
 }
+
+
+/*103.5 DAWN FM CSS */
+
+
+.dawnfm{
+    border: none;
+}
+
+.dawnfm:hover > img{
+    width: 95%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+
+.dawnfm:hover > .coverart h1{
+    transform: translateX(4rem);
+    transition: transform 0.5s linear;
+}
+
+.dawnfm:hover > .coverart .songs{
+    opacity: 1;
+    transform: translateX(0rem);
+    transition: transform 0.5s linear;
+}
+.dawnfm img{
+    height: 500px;
+    width: 95%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    opacity: 0.9;
+    filter: grayscale(0%);
+}
+
+.df{
+    position: relative;
+    left: -5rem;
+    margin: auto auto;
+}
+
+.df h1{
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 92px;
+} 
+
+.df h1::after{
+    content: "2022";
+    position: absolute;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+} 
+
+
+
+.df .songs{
+    opacity: 0.6;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 4rem;
+    letter-spacing: 1.5px;
+}
+
 
 
 
