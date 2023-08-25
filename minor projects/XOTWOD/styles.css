@@ -11,8 +11,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Druk-Web', sans-serif;
-    
-    
 }
 
 html{
@@ -68,6 +66,7 @@ body{
     width: max-content;
     letter-spacing: 2px;
     cursor:default;
+    
 }
 
 .list li:hover::before{
@@ -86,6 +85,7 @@ body{
     text-decoration: none;
     color: white;
     cursor:default;
+
 }
 
 /*HEADER SECTION COMPLETE*/
@@ -130,6 +130,10 @@ body{
 
 
 /*SECTION: SUBCATEGORY1*/
+
+.subcategory1{
+    margin-bottom: 1rem;
+}
 
 .para{
     display: flex;
@@ -302,7 +306,7 @@ body{
     width: 60%;
     color: rgb(237, 226, 226);
     text-align: center;
-    margin: 0 auto 0 auto;
+    margin: 10rem auto 0 auto;
     cursor:default;
 }
 
@@ -323,7 +327,7 @@ body{
     background: white;
     border-radius: 50%;
     color: black;
-    top: 7%;
+    top: 19%;
 }
 
 
@@ -352,15 +356,17 @@ body{
 .mixtape{
     display: flex;
     flex-direction: column;
-    color: rgb(237, 226, 226);
+    /*color: rgb(237, 226, 226);*/
     width: 100%;
+    color: transparent;
+    -webkit-text-stroke: 0.01px white;
 }
 
 .mixtape h2{
     position: relative;
-    margin: 1rem auto;
+    margin: 2rem auto;
     font-size: 45px;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     font-family: 'Bebas Neue', sans-serif;
     z-index: 1;
 }
@@ -370,16 +376,21 @@ body{
 .the-trio{
     width: 80%;
     margin: 1rem auto;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.embed{
+    margin-left: 1rem;
+    opacity: 0.4;
 }
 .card{
     height: 325px;
     width: 350px;
     background: rgba(0, 0, 0, 1);
     box-shadow: inset 0px 0px 35px black, 0px 0px 25px black;
-    padding: 1em;
     color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
 }
 .card:hover{
     background: rgba(0, 0, 0, 0.1);
@@ -461,28 +472,22 @@ body{
     object-fit: cover;
 }
 
-/*MIXTAPE SPOTIFY CSS*/
+/*SPOTIFY VISIBLE ON CARD HOVER*/
 
-.mixtape-spotify{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    margin: auto;
-    width: 80%;
+.echo:hover{
+    opacity: 1;
+    transition: opacity 1s;
 }
 
-.mixtape-spotify .embed{
-    top: 3rem;
-    width: 25%;
-    opacity: 0;
+.house:hover{
+    opacity: 1;
+    transition: opacity 1s;
 }
 
-.mixtape-spotify .embed:hover{
-    opacity: 0.9;
+.thurs:hover{
+    opacity: 1;
+    transition: opacity 1s;
 }
-
 
 /* 5 ALBUMS CARD CSS */
 
@@ -521,6 +526,8 @@ body{
     letter-spacing: 5px;
     font-family: 'Bebas Neue', sans-serif;
     z-index: 1;
+    color: transparent;
+    -webkit-text-stroke: 0.01px white;
 }
 
 .thefifer{
@@ -852,7 +859,7 @@ body{
     width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    opacity: 0.9;
+    opacity: 0.8;
     filter: grayscale(0%);
 }
 
