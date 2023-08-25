@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lato&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Cookie&family=Lato&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&display=swap');
+
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Druk-Web', sans-serif;
+    
+    
 }
 
 html{
     scroll-behavior: smooth;
+    scroll-padding: 15rem;
 }
 body{
     height: 120vh;
@@ -92,12 +100,12 @@ body{
 .main video{
     /** Simulationg background-size: cover */
     object-fit: cover;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    filter: brightness(40%);
+    filter: brightness(30%);
 }
 
 .video-wrapper{
@@ -178,7 +186,7 @@ body{
     object-fit: cover;
     z-index: -1;
     opacity: 1;
-    
+    visibility: hidden;
 }
 
 /* SECTION: SUBCATEGORY2 */
@@ -220,30 +228,29 @@ body{
 }
 .biography h1{
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 92px;
+    font-family: 'Bebas Neue', sans-serif;
     margin: 24px auto;
     letter-spacing: 2px;
     cursor:default;
 }
 
 .biography span{
-    font-size: 18px;
+    font-size: 28px;
     margin: 0 auto;  
     letter-spacing: 1.5px; 
     cursor:default; 
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .biography p{
     margin: 25px auto;
     text-align: justify;
     cursor:default;
+    
+    font-size: 18px;
 }
-.biography h1::before{
-    content: "a";
-    font-style: regular;
-    font-size: 52px;
-    cursor:default;
-}
+
 
 .biography h1::after{
     position: relative;
@@ -256,9 +263,12 @@ body{
 
 .info{
     margin: 40px auto;
+    font-family: 'Bebas Neue', sans-serif;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
     cursor:default;
+    
 }
 
 
@@ -266,13 +276,6 @@ body{
 
 
 /*DISCOGRAPHY CSS BEGINS HERE*/
-
-.third{
-    display: block;
-    filter: brightness(40%);
-    height: 130vh;
-    position: relative;
-}
 
 .subcategory3{
     width: 100%;
@@ -291,7 +294,7 @@ body{
     align-items: center;
     position: absolute;
     z-index: 1;
-    top: -400px;
+    top: -700px;
 }
 .discography{
     display: flex;
@@ -299,7 +302,7 @@ body{
     width: 60%;
     color: rgb(237, 226, 226);
     text-align: center;
-    margin: 4rem auto 0 auto;
+    margin: 0 auto 0 auto;
     cursor:default;
 }
 
@@ -311,7 +314,8 @@ body{
     font-family: 'Bebas Neue', sans-serif;
 }
 
-.discography h1::after,.discography h1::before{
+
+.discography h1:hover::before,.discography h1:hover::after{
     content: "";
     position: absolute;
     height: 2px;
@@ -319,7 +323,7 @@ body{
     background: white;
     border-radius: 50%;
     color: black;
-    top: 16%;
+    top: 7%;
 }
 
 
@@ -354,7 +358,7 @@ body{
 
 .mixtape h2{
     position: relative;
-    margin: 3rem auto;
+    margin: 1rem auto;
     font-size: 45px;
     letter-spacing: 5px;
     font-family: 'Bebas Neue', sans-serif;
@@ -462,53 +466,22 @@ body{
 .mixtape-spotify{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: relative;
-    width: 100%;
+    margin: auto;
+    width: 80%;
 }
 
 .mixtape-spotify .embed{
-    position: absolute;
     top: 3rem;
-    width: 22%;
+    width: 25%;
+    opacity: 0;
 }
 
-.thurs{
-    right: 11.7rem;
+.mixtape-spotify .embed:hover{
+    opacity: 0.9;
 }
-
-.house{
-    align-items: center;
-}
-
-.echo{
-    left: 11.7rem;
-}
-
-/*BACKGROUND BACKGROUND*/
-
-.fourth{
-    display: block;
-    height: 130vh;
-    width: 100%;
-    filter: brightness(40%);
-}
-
-.fifth{
-    display: block;
-    height: 130vh;
-    width: 100%;
-    filter: brightness(20%);
-}
-
-.sixth{
-    display: block;
-    height: 130vh;
-    width: 100%;
-    filter: brightness(30%);
-}
-
 
 
 /* 5 ALBUMS CARD CSS */
