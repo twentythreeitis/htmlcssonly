@@ -198,7 +198,7 @@ body{
 
 .bg{
     position: relative;
-    height: 120vh;
+    height: 110vh;
     width: 100%;
     object-fit: cover;
     z-index: -1;
@@ -918,7 +918,7 @@ body{
 .subcategory4{
     position: relative;
     top: 5rem;
-    height: 150vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -961,14 +961,13 @@ body{
     margin: 0 auto;
     display: grid;
     grid-template-rows: 3;
-    gap: 2rem;
 }
 
 .year{
     display: block;
-    height: 300px;
+    height: 250px;
     width: 100%;
-    margin: 1rem 0;
+    margin: 0;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
@@ -982,15 +981,12 @@ body{
 
 .early:hover > .grayscale{
     filter: grayscale(70%);
-    opacity: 1;
 }
 .mid:hover > .grayscale2{
     filter: grayscale(70%);
-    opacity: 1;
 }
 .lately:hover > .grayscale3{
     filter: grayscale(70%);
-    opacity: 1;
 }
 
 
@@ -1012,7 +1008,7 @@ body{
     font-family: 'Bebas Neue', sans-serif;
     left: 0; 
     right: 0; 
-    top: 35%;
+    top: 30%;
     margin-left: auto; 
     margin-right: auto;
     z-index: 1;
@@ -1053,10 +1049,9 @@ body{
 }
 
 .slider img{
-    height: 300px;    
+    height: 290px;    
     object-fit: cover;
-    margin: 0 1rem;
-    
+    margin: 0 0.5rem;
 }
 
 /*MERCH CSS*/
@@ -1138,13 +1133,8 @@ body{
 
 .merchandise img:hover{
     filter: grayscale(0) brightness(100%);
-    z-index: 3;
+    z-index: 2;
 }
-
-
-
-
-
 
 
 
@@ -1169,15 +1159,15 @@ body{
 
 /*FOOTER CSS*/
 
-.second{
-    display: block;
-    filter: brightness(20%);
-}
 .footer{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 20%;
+    height: 25%;
     width: 100%;
-    position: absolute;
-    margin: -180px auto;
+    position: relative;
+    margin: auto;
 }
 
 .socials .platforms{
@@ -1190,17 +1180,27 @@ body{
     text-decoration: none;
     list-style: none;
     padding: 20px;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .socials .platforms li:hover{
-    cursor: pointer;
-    transform: translateY(-1px);
+    cursor: default;
+    transform: translateY(-2px);
     transition: all 0.2s ease-in-out;
 }
 
 .socials .platforms li i{
     color: white;
+    cursor: default;
+}
+
+.socials .platforms li i:hover{
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.tandc{
+    margin: 1rem 0;
 }
 
 .tandc .footbar{
@@ -1213,7 +1213,7 @@ body{
 
 .tandc .footbar li{
     position: relative;
-    font-size: 20px;
+    font-size: 24px;
     list-style: none;
     width: max-content;
 }
@@ -1221,15 +1221,23 @@ body{
 .tandc .footbar li a{
     text-decoration: none;
     color: white;
+    cursor:default;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 4px;
 }
+
+.tandc .footbar li a:hover{
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+}
+
 
 .tandc .footbar li:hover::before{
     content: "";
     position: absolute;
-    height: 2px;
+    height: 1px;
     width: 100%;
     bottom: -5px;
     border-radius: 50%;
     background: white;
-    cursor: pointer;
+    cursor:default;
 }
