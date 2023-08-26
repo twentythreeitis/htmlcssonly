@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lato&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lato&family=Poppins:wght@300;400;500;600&family=Rooto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Cookie&family=Lato&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&display=swap');
@@ -47,6 +47,11 @@ body{
 #logoo{
     height: 180px;
     width: 180px;
+    filter: grayscale(100%);
+}
+
+#logoo:hover{
+    filter: grayscale(0);
 }
 
 
@@ -69,13 +74,17 @@ body{
     
 }
 
+.list li:hover > .nav-link{
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+}
+
 .list li:hover::before{
     content: "";
     position: absolute;
-    height: 2px;
+    height: 1px;
     width: 100%;
     background: white;
-    border-radius: 50%;
+    border-radius: 100%;
     bottom: -5px;
     cursor:default;
 }
@@ -84,7 +93,9 @@ body{
 .nav-link{
     text-decoration: none;
     color: white;
-    cursor:default;
+    cursor: default;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 4px;
 
 }
 
@@ -105,7 +116,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    filter: brightness(30%);
+    filter: brightness(30%) grayscale(80%);
 }
 
 .video-wrapper{
@@ -155,6 +166,7 @@ body{
     margin: 20px;
     letter-spacing: 2px;
     cursor:default;
+    font-size: 52px;
 }
 
 .para h1::after{
@@ -221,6 +233,7 @@ body{
     flex-direction: column;
     width: 60%;
     color: rgb(237, 226, 226);
+    position: relative;
 }
 
 .dp{
@@ -229,7 +242,14 @@ body{
     width: 400px;
     border-radius: 200px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    filter: grayscale(100%);
+    object-fit: cover;
 }
+
+.dp:hover{
+    filter: grayscale(0);
+}
+
 .biography h1{
     text-transform: uppercase;
     font-size: 92px;
@@ -319,11 +339,11 @@ body{
 }
 
 
-.discography h1:hover::before,.discography h1:hover::after{
+.discography h1::before,.discography h1::after{
     content: "";
     position: absolute;
-    height: 2px;
-    width: 10%;
+    height: 1px;
+    width: 9%;
     background: white;
     border-radius: 50%;
     color: black;
@@ -381,8 +401,9 @@ body{
 }
 
 .embed{
-    margin-left: 1rem;
-    opacity: 0.4;
+    margin-left: 1.2rem;
+    opacity: 0.7;
+    filter: grayscale(100%);
 }
 .card{
     height: 325px;
@@ -391,9 +412,11 @@ body{
     box-shadow: inset 0px 0px 35px black, 0px 0px 25px black;
     color: rgb(255, 255, 255);
     margin-bottom: 2rem;
+    filter: grayscale(100%);
 }
 .card:hover{
     background: rgba(0, 0, 0, 0.1);
+    filter: grayscale(0);
 }
 .card .heading{
     font-weight: bold;
@@ -476,17 +499,18 @@ body{
 
 .echo:hover{
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
+    
 }
 
 .house:hover{
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
 }
 
 .thurs:hover{
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
 }
 
 /* 5 ALBUMS CARD CSS */
@@ -574,6 +598,7 @@ body{
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     opacity: 1;
+    filter: grayscale(0);
 }
 
 
@@ -593,7 +618,7 @@ body{
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     opacity: 0.7;
-    filter: grayscale(50%);
+    filter: grayscale(100%);
 }
 
 .kl{
@@ -638,7 +663,7 @@ body{
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     opacity: 0.7;
-    filter: grayscale(50%);
+    filter: grayscale(100%);
     z-index: -1;
 }
 
@@ -647,6 +672,7 @@ body{
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     opacity: 1;
+    filter: grayscale(0);
 }
 
 
@@ -709,6 +735,7 @@ body{
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     opacity: 1;
+    filter: grayscale(0);
 }
 
 
@@ -728,7 +755,7 @@ body{
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     opacity: 0.9;
-    filter: grayscale(0%);
+    filter: grayscale(100%);
 }
 
 .sb{
@@ -773,7 +800,7 @@ body{
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     opacity: 0.7;
-    filter: grayscale(50%);
+    filter: grayscale(100%);
     z-index: -1;
 }
 
@@ -782,6 +809,7 @@ body{
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     opacity: 1;
+    filter: grayscale(0);
 }
 
 
@@ -841,6 +869,7 @@ body{
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     opacity: 1;
+    filter: grayscale(0);
 }
 
 
@@ -860,7 +889,7 @@ body{
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     opacity: 0.8;
-    filter: grayscale(0%);
+    filter: grayscale(100%);
 }
 
 .df{
@@ -915,22 +944,22 @@ body{
     font-family: 'Bebas Neue', sans-serif;
 }
 
-.subcategory4 h1:hover::before,.subcategory4 h1:hover::after{
+.subcategory4 h1::before,.subcategory4 h1::after{
     content: "";
     position: absolute;
-    height: 2px;
+    height: 1px;
     width: 10%;
     background: white;
     border-radius: 50%;
     color: black;
 }
 
-.subcategory4 h1:hover::before{
+.subcategory4 h1::before{
     left: 16%;
     top: 3rem;
 }
 
-.subcategory4 h1:hover::after{
+.subcategory4 h1::after{
     top: 3rem;
     right: 16%;
 }
@@ -953,6 +982,26 @@ body{
     white-space: nowrap;
     position: relative;
 }
+
+.grid-container{
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
+
+.early:hover > .grayscale{
+    filter: grayscale(70%);
+    opacity: 1;
+}
+.mid:hover > .grayscale2{
+    filter: grayscale(70%);
+    opacity: 1;
+}
+.lately:hover > .grayscale3{
+    filter: grayscale(70%);
+    opacity: 1;
+}
+
+
 
 .early:hover > h2{
     opacity: 0;
@@ -1015,8 +1064,8 @@ body{
     height: 300px;    
     object-fit: cover;
     margin: 0 1rem;
+    
 }
-
 
 
 
