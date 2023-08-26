@@ -403,8 +403,8 @@ body{
 
 .embed{
     margin-left: 1.2rem;
-    opacity: 0.7;
-    filter: grayscale(100%);
+    opacity: 0.9;
+    filter: grayscale(100%) brightness(60%);
 }
 .card{
     height: 325px;
@@ -499,19 +499,15 @@ body{
 /*SPOTIFY VISIBLE ON CARD HOVER*/
 
 .echo:hover{
-    opacity: 1;
-    transition: opacity 0.5s;
-    
+    filter: brightness(100%) grayscale(100%);
 }
 
 .house:hover{
-    opacity: 1;
-    transition: opacity 0.5s;
+    filter: brightness(100%) grayscale(100%);
 }
 
 .thurs:hover{
-    opacity: 1;
-    transition: opacity 0.5s;
+    filter: brightness(100%) grayscale(100%);
 }
 
 /* 5 ALBUMS CARD CSS */
@@ -598,7 +594,6 @@ body{
     width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    opacity: 1;
     filter: grayscale(0);
 }
 
@@ -618,8 +613,7 @@ body{
     width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    opacity: 0.7;
-    filter: grayscale(100%);
+    filter: grayscale(100%) brightness(60%);
 }
 
 .kl{
@@ -663,8 +657,7 @@ body{
     width: 100%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    opacity: 0.7;
-    filter: grayscale(100%);
+    filter: grayscale(100%) brightness(60%);
     z-index: -1;
 }
 
@@ -672,7 +665,6 @@ body{
     width: 100%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    opacity: 1;
     filter: grayscale(0);
 }
 
@@ -735,7 +727,6 @@ body{
     width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    opacity: 1;
     filter: grayscale(0);
 }
 
@@ -755,8 +746,8 @@ body{
     width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    opacity: 0.9;
-    filter: grayscale(100%);
+    opacity: 1;
+    filter: grayscale(100%) brightness(60%);
 }
 
 .sb{
@@ -800,8 +791,8 @@ body{
     width: 100%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    opacity: 0.7;
-    filter: grayscale(100%);
+    opacity: 1;
+    filter: grayscale(100%) brightness(60%);
     z-index: -1;
 }
 
@@ -809,7 +800,6 @@ body{
     width: 100%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    opacity: 1;
     filter: grayscale(0);
 }
 
@@ -889,8 +879,8 @@ body{
     width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
-    opacity: 0.8;
-    filter: grayscale(100%);
+    opacity: 1;
+    filter: grayscale(100%) brightness(60%);
 }
 
 .df{
@@ -985,8 +975,9 @@ body{
 }
 
 .grid-container{
-    filter: grayscale(100%);
-    opacity: 0.8;
+    filter: grayscale(100%) brightness(50%);
+    opacity: 1;
+    
 }
 
 .early:hover > .grayscale{
@@ -1072,7 +1063,7 @@ body{
 
 .final-subcategory{
     height: 110vh;
-    width: 76%;
+    width: 80%;
     position: relative;
     top: 30%;
     margin: 8rem auto 3rem auto;
@@ -1128,21 +1119,29 @@ body{
     right: 20%;
 }
 
+.merchandise{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
 
 .merchandise img{
     margin: auto;
     position: relative;
-    height: 150px;
-    width: 160px;
+    height: 160px;
+    width: 190px;
     object-fit: cover;
-    filter: grayscale(100%);
-    opacity: 0.5;
+    filter: grayscale(100%) brightness(40%);
+    opacity: 1;
 }
 
 .merchandise img:hover{
-    opacity: 1;
-    filter: grayscale(0);
+    filter: grayscale(0) brightness(100%);
+    z-index: 3;
 }
+
+
 
 
 
