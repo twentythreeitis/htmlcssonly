@@ -15,7 +15,8 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-padding: 15rem;
+    scroll-padding: 2rem;
+    scroll-snap-type: 2s;
 }
 body{
     height: 120vh;
@@ -1067,6 +1068,81 @@ body{
     
 }
 
+/*MERCH CSS*/
+
+.final-subcategory{
+    height: 110vh;
+    width: 76%;
+    position: relative;
+    top: 30%;
+    margin: 8rem auto 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.final-subcategory h1{
+    color: rgb(237, 226, 226);
+    width: 80%;
+    position: relative;
+    margin: 1rem auto 2rem auto;
+    text-align: center;
+    cursor:default;
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.final-subcategory h2{
+    color: white;
+    margin: auto;
+    z-index: 1;
+    font-size: 75px;
+    text-align: center;
+    letter-spacing: -0.2rem;
+    position: absolute;
+    top: 50%;
+}
+
+.final-subcategory h1::before,.final-subcategory h1::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 10%;
+    background: white;
+    border-radius: 50%;
+    color: black;
+}
+
+.final-subcategory h1::before{
+    left: 20%;
+    top: 3rem;
+}
+
+.final-subcategory h1::after{
+    top: 3rem;
+    right: 20%;
+}
+
+
+.merchandise img{
+    margin: auto;
+    position: relative;
+    height: 150px;
+    width: 160px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.merchandise img:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
 
 
 
