@@ -193,7 +193,7 @@ body{
 .biography{
     display: flex;
     flex-direction: column;
-    width: 80vw;
+    width: 60vw;
     color: var(--white);
     position: relative;
     margin: auto;
