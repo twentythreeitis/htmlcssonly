@@ -4,8 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&display=swap');
 
 
-
-
+:root{
+    --white:rgb(213, 213, 213);
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,34 +16,59 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-padding: 2rem;
+    scroll-padding: 1rem;
     scroll-snap-type: 2s;
 }
 body{
     height: 120vh;
     width: 100%;
+    display: block;
+}
+
+/*TRYING TO GIVE A VIDEO BACKGROUND TO THE MAIN SECTION*/
+
+.container{
+    background: url("https://www.youtube.com/watch?v=Is14IzzmfuM") repeat fixed;
+/* Telling our absolute positioned video to 
+  be relative to this element */
+    position: relative;
+    width: 100%;
+    z-index: -1;
+/* Will not allow the video to overflow the 
+  container */
+  overflow: hidden;
+}
+
+.container video{
+    /** Simulationg background-size: cover */
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: brightness(30%) grayscale(80%);
 }
 
 /*HEADER SECTION BEGINS*/
 
 .header{
     height: 250px;
-    width: 100%;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0);
+    margin: auto;
 }
 
 .logo{
     position: relative;
     height: 200px;
     width: 50%;
-    left: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    /*left: 100px;*/
+    margin: auto;
 }
 
 #logoo{
@@ -54,8 +80,6 @@ body{
 #logoo:hover{
     filter: grayscale(0);
 }
-
-
 
 .list{
     display: flex;
@@ -93,81 +117,37 @@ body{
 
 .nav-link{
     text-decoration: none;
-    color: white;
+    color: var(--white);
     cursor: default;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 4px;
-
 }
 
 /*HEADER SECTION COMPLETE*/
 
-
-/*TRYING TO GIVE A VIDEO BACKGROUND TO THE MAIN SECTION*/
-
-.main{
-    background: url("https://www.youtube.com/watch?v=Is14IzzmfuM") repeat fixed;
-}
-
-.main video{
-    /** Simulationg background-size: cover */
-    object-fit: cover;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    filter: brightness(30%) grayscale(80%);
-}
-
-.video-wrapper{
-    /* Telling our absolute positioned video to 
-  be relative to this element */
-    position: relative;
-    height: 110vh;
-    width: 100%;
-    z-index: -1;
-
-    /* Will not allow the video to overflow the 
-  container */
-  overflow: hidden;
-
-  /* Centering the container's content vertically 
-  and horizontally */
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
 /*SECTION: SUBCATEGORY1*/
-
 .subcategory1{
-    margin-bottom: 1rem;
+    height: 70vh;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .para{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 250px;
-    padding: 20px;
     height: 300px;
-    width: 76%;
-    left: 14%;
-    color: white;
-    cursor:default;
+    width: 100%;
+    color: var(--white);
+    cursor: default;
+    text-align: center;
 }
 
 .para h1{
-    font-size: 4rem;
-    margin: 20px;
-    letter-spacing: 2px;
+    font-size: 4vw;
     cursor:default;
-    font-size: 52px;
+    font-size: 48px;
 }
 
 .para h1::after{
@@ -177,73 +157,56 @@ body{
     height: 12px;
     width: 30px;
     cursor:default;
-
 }
 .para h3{
     font-size: 1.5rem;
     margin: 20px;
     font-style: italic;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.2em;
     cursor:default;
 }
 
 .para p{
     text-align: center;
     font-size: 1.1rem;
-    margin: 10px;
     line-height: 2rem;
     letter-spacing: 2px;
     cursor:default;
 }
 
-.bg{
-    position: relative;
-    height: 110vh;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 1;
-    visibility: hidden;
-}
-
 /* SECTION: SUBCATEGORY2 */
 
 .subcategory2{
-    width: 100%;
-}
-.background2{
-    display: flex;
-    flex-direction: column;
+    width: 80vw;
+    margin: 2rem auto;
+    height: 140vh;
     position: relative;
+    overflow: hidden;
 }
 
-.first{
-    filter: brightness(20%);
-}
 .overlay-text{
     width: 100%;
-    display: flex;
-    justify-content: center;
     position: absolute;
     z-index: 1;
-    top: -130px;
 }
 
 .biography{
     display: flex;
     flex-direction: column;
-    width: 60%;
-    color: rgb(237, 226, 226);
+    width: 80vw;
+    color: var(--white);
     position: relative;
+    margin: auto;
+    padding: 1rem;
 }
 
 .dp{
-    margin: 40px auto;
-    height: 400px;
-    width: 400px;
-    border-radius: 200px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-    filter: grayscale(100%);
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    filter: grayscale(100%) brightness(70%);
+    border-radius: 50%;
     object-fit: cover;
 }
 
@@ -253,29 +216,13 @@ body{
 
 .biography h1{
     text-transform: uppercase;
-    font-size: 92px;
+    font-size: 84px;
     font-family: 'Bebas Neue', sans-serif;
-    margin: 24px auto;
+    margin: 2rem auto;
     letter-spacing: 2px;
-    cursor:default;
+    cursor: default;
+    white-space: nowrap;
 }
-
-.biography span{
-    font-size: 28px;
-    margin: 0 auto;  
-    letter-spacing: 1.5px; 
-    cursor:default; 
-    font-family: 'Bebas Neue', sans-serif;
-}
-
-.biography p{
-    margin: 25px auto;
-    text-align: justify;
-    cursor:default;
-    
-    font-size: 18px;
-}
-
 
 .biography h1::after{
     position: relative;
@@ -286,8 +233,16 @@ body{
     cursor:default;
 }
 
+.biography span{
+    font-size: 28px;
+    margin: auto;  
+    letter-spacing: 1.5px; 
+    cursor:default; 
+    font-family: 'Bebas Neue', sans-serif;
+}
+
 .info{
-    margin: 40px auto;
+    margin: 0 auto 2rem auto;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
     font-size: 20px;
@@ -296,98 +251,69 @@ body{
     
 }
 
-
-
-
+.biography p{
+    margin: 1.5rem auto;
+    text-align: justify;
+    cursor:default;
+    font-size: 16px;
+}
 
 /*DISCOGRAPHY CSS BEGINS HERE*/
 
 .subcategory3{
-    width: 100%;
+    height: 140vh;
+    width: 80vw;
+    margin: auto;
     position: relative;
 }
-.background3{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-.overlay-text2{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    top: -700px;
-}
+
 .discography{
     display: flex;
     flex-direction: column;
-    width: 60%;
-    color: rgb(237, 226, 226);
+    width: 100%;
+    color: var(--white);
     text-align: center;
-    margin: 16rem auto 0 auto;
-    cursor:default;
+    margin: auto;
+    cursor: default;
 }
 
 .discography h1{
     text-transform: uppercase;
+    width: 80%;
     font-size: 80px;
     margin: 1rem auto;
     letter-spacing: 10px;
     font-family: 'Bebas Neue', sans-serif;
-}
-
-
-.discography h1::before,.discography h1::after{
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 9%;
-    background: white;
-    border-radius: 50%;
-    color: black;
-    top: 24%;
-}
-
-
-
-.discography h1::after{
-    right: 24%;
-}
-
-.discography h1::before{
-    left: 23%;
+    position: relative;
 }
 
 .discography h3{
     font-size: 1rem;
     margin: 0 auto 1rem auto;  
     letter-spacing: 1.5px; 
-    font-weight: normal;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .discography h3 span{
-    color: silver;
-    font-size: 36px;
+    color: var(--white);
+    font-size: 2rem;
     text-shadow: 3px 1px 0px rgba(255, 255, 255, 0.3);
 }
 
 .mixtape{
     display: flex;
     flex-direction: column;
-    /*color: rgb(237, 226, 226);*/
     width: 100%;
     color: transparent;
-    -webkit-text-stroke: 0.01px white;
+    -webkit-text-stroke: 0.01px var(--white);
 }
 
 .mixtape h2{
     position: relative;
     margin: 2rem auto;
-    font-size: 45px;
-    letter-spacing: 10px;
+    font-size: 35px;
+    letter-spacing: 5px;
     font-family: 'Bebas Neue', sans-serif;
     z-index: 1;
 }
@@ -395,23 +321,24 @@ body{
 /*THE TRILOGY GRID*/
 
 .the-trio{
-    width: 80%;
+    width: 100%;
     margin: 1rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
 }
 
 .embed{
-    margin-left: 1.2rem;
-    opacity: 0.9;
+    margin: auto;
+    opacity: 0.8;
     filter: grayscale(100%) brightness(60%);
 }
 .card{
-    height: 325px;
-    width: 350px;
+    height: 300px;
+    width: 325px;
     background: rgba(0, 0, 0, 1);
     box-shadow: inset 0px 0px 35px black, 0px 0px 25px black;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     margin-bottom: 2rem;
     filter: grayscale(100%);
 }
@@ -436,7 +363,7 @@ body{
     background: linear-gradient(90deg, red , black);
 }
 .middle{
-    background: linear-gradient(90deg, gray , black);
+    background: linear-gradient(90deg, black , grey);
 }
 .right{
     background: linear-gradient(90deg, yellow , rgb(1, 202, 1), rgb(255, 89, 0) ,rgb(74, 74, 158), skyblue);
@@ -497,53 +424,42 @@ body{
 }
 
 /*SPOTIFY VISIBLE ON CARD HOVER*/
-
-.echo:hover{
+.echo:hover, .house:hover, .thurs:hover{
     filter: brightness(100%) grayscale(100%);
+    opacity: 1;
 }
 
-.house:hover{
-    filter: brightness(100%) grayscale(100%);
-}
-
-.thurs:hover{
-    filter: brightness(100%) grayscale(100%);
-}
 
 /* 5 ALBUMS CARD CSS */
 
-
-.background4{
+.subcategory4{
     display: flex;
     flex-direction: column;
     position: relative;
+    height: 320vh;
+    width: 80vw;
+    margin: auto;
 }
 
 .overlay-text3{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     z-index: 1;
-    top: -220px;
 }
-
 
 .studio{
     display: flex;
     flex-direction: column;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     width: 100%;
     position: relative;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .studio h2{
     position: relative;
-    margin: 3rem auto 2rem auto;
-    font-size: 45px;
+    margin: auto;
+    font-size: 35px;
     letter-spacing: 5px;
     font-family: 'Bebas Neue', sans-serif;
     z-index: 1;
@@ -563,9 +479,8 @@ body{
     grid-template-columns: 2fr 1fr;
     position: relative;
     height: max-content;
-    width: 60%;
-    border: 1px solid black;
-    margin: 3rem 0;
+    width: 80%;
+    margin: 3rem auto;
 }
 
 /*INVERTING THE GRID TEMPLATE IN OPPOSITE ORDER ONE AFTER THE OTHER*/
@@ -586,12 +501,7 @@ body{
 
 /*PARTICULAR KISSLAND CSS*/
 
-.kissland{
-    border: none;
-}
-
 .kissland:hover > img{
-    width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     filter: grayscale(0);
@@ -609,7 +519,7 @@ body{
     transition: transform 0.5s linear;
 }
 .kissland img{
-    height: 400px;
+    height: 375px;
     width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
@@ -619,42 +529,35 @@ body{
 .kl{
     position: relative;
     left: -5rem;
-    margin: auto auto;
+    margin: auto;
 }
 
 .kl h1{
     position: relative;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 92px;
+    font-size: 84px;
 } 
 
 .kl h1::after{
     content: "2013";
     position: absolute;
-    font-size: 18px;
+    font-size: 1rem;
     letter-spacing: 1.5px;
 } 
 
-
-
 .kl .songs{
     opacity: 0.6;
-    font-size: 18px;
+    font-size: 1rem;
     text-transform: uppercase;
     margin-left: 4rem;
     letter-spacing: 1.5px;
 }
 
-
 /*PARTICULAR BBTM CSS*/
 
-.bbtm{
-    border: none;
-}
-
 .bbtm img{
-    height: 500px;
-    width: 100%;
+    height: 375px;
+    width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     filter: grayscale(100%) brightness(60%);
@@ -662,15 +565,13 @@ body{
 }
 
 .bbtm:hover > img{
-    width: 100%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     filter: grayscale(0);
 }
 
-
 .bbtm:hover > h1{
-    transform: translateX(-4rem);
+    transform: translateX(-3rem);
     transition: transform 0.5s linear;
 }
 
@@ -682,46 +583,32 @@ body{
 
 .bb{
     position: relative;
-    left: 0rem;
-    bottom: -9rem;
+    top: 6rem;
 }
-
 
 .bbtm h1{
     position: absolute;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 84px;
-    left: 4rem;
-    top: 2rem;
 }
 
 .bbtm h1::after{
     content: "2015";
     position: absolute;
-    font-size: 18px;
+    font-size: 1rem;
     letter-spacing: 1.5px;
 } 
 
-
-
 .bb .songs{
     opacity: 0.6;
-    font-size: 18px;
+    font-size: 1rem;
     text-transform: uppercase;
     margin-right: 1rem;
     letter-spacing: 1.5px;
     text-align: right;
 }
 
-
-
-
-
 /*STARBOY CSS*/
-
-.starboy{
-    border: none;
-}
 
 .starboy:hover > img{
     width: 95%;
@@ -729,7 +616,6 @@ body{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     filter: grayscale(0);
 }
-
 
 .starboy:hover > .coverart h1{
     transform: translateX(4rem);
@@ -742,7 +628,7 @@ body{
     transition: transform 0.5s linear;
 }
 .starboy img{
-    height: 500px;
+    height: 375px;
     width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
@@ -753,42 +639,35 @@ body{
 .sb{
     position: relative;
     left: -5rem;
-    margin: auto auto;
+    margin: auto;
 }
 
 .sb h1{
     position: relative;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 92px;
+    font-size: 84px;
 } 
 
 .sb h1::after{
     content: "2016";
     position: absolute;
-    font-size: 18px;
+    font-size: 1rem;
     letter-spacing: 1.5px;
 } 
 
-
-
 .sb .songs{
     opacity: 0.6;
-    font-size: 18px;
+    font-size: 1rem;
     text-transform: uppercase;
     margin-left: 4rem;
     letter-spacing: 1.5px;
 }
 
-
 /*AFTER HOURS CSS*/
 
-.afterhours{
-    border: none;
-}
-
 .afterhours img{
-    height: 500px;
-    width: 100%;
+    height: 375px;
+    width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     opacity: 1;
@@ -797,12 +676,10 @@ body{
 }
 
 .afterhours:hover > img{
-    width: 100%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     filter: grayscale(0);
 }
-
 
 .afterhours:hover > h1{
     transform: translateX(-4rem);
@@ -818,42 +695,33 @@ body{
 .ah{
     position: relative;
     left: 0rem;
-    bottom: -9rem;
+    top: 6rem;
 }
 
 .afterhours h1{
     position: absolute;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 92px;
+    font-size: 84px;
     left: 1rem;
-    top: 2rem;
 }
 
 .afterhours h1::after{
     content: "2020";
     position: absolute;
-    font-size: 18px;
+    font-size: 1rem;
     letter-spacing: 1.5px;
 } 
 
-
-
 .ah .songs{
     opacity: 0.6;
-    font-size: 18px;
+    font-size: 1rem;
     text-transform: uppercase;
     margin-right: 1rem;
     letter-spacing: 1.5px;
     text-align: right;
 }
 
-
 /*103.5 DAWN FM CSS */
-
-
-.dawnfm{
-    border: none;
-}
 
 .dawnfm:hover > img{
     width: 95%;
@@ -862,7 +730,6 @@ body{
     opacity: 1;
     filter: grayscale(0);
 }
-
 
 .dawnfm:hover > .coverart h1{
     transform: translateX(4rem);
@@ -875,7 +742,7 @@ body{
     transition: transform 0.5s linear;
 }
 .dawnfm img{
-    height: 500px;
+    height: 375px;
     width: 95%;
     object-fit: cover;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
@@ -892,21 +759,19 @@ body{
 .df h1{
     position: relative;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 92px;
+    font-size: 84px;
 } 
 
 .df h1::after{
     content: "2022";
     position: absolute;
-    font-size: 18px;
+    font-size: 1rem;
     letter-spacing: 1.5px;
 } 
 
-
-
 .df .songs{
     opacity: 0.6;
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
     margin-left: 4rem;
     letter-spacing: 1.5px;
@@ -915,18 +780,17 @@ body{
 
 /*ACHIEVEMENTS CSS*/
 
-.subcategory4{
+.subcategory5{
     position: relative;
-    top: 20rem;
-    height: 100vh;
-    width: 100%;
+    height: 120vh;
+    width: 80vw;
+    margin: 2rem auto;
+    color: var(--white);
 }
 
-.subcategory4 h1{
-    color: rgb(237, 226, 226);
-    width: 80%;
-    position: relative;
-    margin: 5rem auto 5rem auto;
+.subcategory5 h1{
+    width: 100%;
+    margin: 3rem auto;
     text-align: center;
     cursor:default;
     text-transform: uppercase;
@@ -935,30 +799,10 @@ body{
     font-family: 'Bebas Neue', sans-serif;
 }
 
-.subcategory4 h1::before,.subcategory4 h1::after{
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 10%;
-    background: white;
-    border-radius: 50%;
-    color: black;
-}
-
-.subcategory4 h1::before{
-    left: 16%;
-    top: 3rem;
-}
-
-.subcategory4 h1::after{
-    top: 3rem;
-    right: 16%;
-}
-
 .grid-parent{
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
+    height: 70%;
+    width: 100%;
+    margin: auto;
     display: grid;
     grid-template-rows: 3;
 }
@@ -976,7 +820,6 @@ body{
 .grid-container{
     filter: grayscale(100%) brightness(50%);
     opacity: 1;
-    
 }
 
 .early:hover > .grayscale{
@@ -988,8 +831,6 @@ body{
 .lately:hover > .grayscale3{
     filter: grayscale(70%);
 }
-
-
 
 .early:hover > h2{
     opacity: 0;
@@ -1049,7 +890,7 @@ body{
 }
 
 .slider img{
-    height: 290px;    
+    height: 225px;    
     object-fit: cover;
     margin: 0 0.5rem;
 }
@@ -1058,23 +899,20 @@ body{
 
 .final-subcategory{
     height: 110vh;
-    width: 80%;
+    width: 80vw;
     position: relative;
-    top: 60%;
-    margin: 3rem auto 3rem auto;
+    margin: 1rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    color: var(--white);
 }
 
-
 .final-subcategory h1{
-    color: rgb(237, 226, 226);
     width: 80%;
     position: relative;
-    margin: 1rem auto 2rem auto;
+    margin: 2rem auto;
     text-align: center;
     cursor:default;
     text-transform: uppercase;
@@ -1084,35 +922,13 @@ body{
 }
 
 .final-subcategory h2{
-    color: white;
     margin: auto;
     z-index: 1;
-    font-size: 75px;
+    font-size: 5rem;
     text-align: center;
     letter-spacing: -0.2rem;
     position: absolute;
     top: 50%;
-}
-
-.final-subcategory h1::before,.final-subcategory h1::after{
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 15%;
-
-    background: white;
-    border-radius: 50%;
-    color: black;
-}
-
-.final-subcategory h1::before{
-    left: 20%;
-    top: 3rem;
-}
-
-.final-subcategory h1::after{
-    top: 3rem;
-    right: 20%;
 }
 
 .merchandise{
@@ -1137,34 +953,12 @@ body{
     z-index: 2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*FOOTER CSS*/
 
 .footer{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    bottom: -50%;
     height: 25%;
     width: 100%;
     position: relative;
