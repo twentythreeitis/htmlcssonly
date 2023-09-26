@@ -69,7 +69,6 @@ body{
     padding: 0 3vw;
     background: rgba(0, 0, 0, 0.5);
 }
-
 .logo{
     position: relative;
     height: 100%;
@@ -86,6 +85,21 @@ body{
     display: none;
 }
 
+.header .hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
 #logoo:hover{
     filter: grayscale(0);
 }
@@ -96,7 +110,7 @@ body{
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    gap:4vw;
+    gap: 4vw;
     padding: 0;
 }
 
@@ -107,10 +121,6 @@ body{
     width: max-content;
     letter-spacing: 2px;
     cursor:default;
-}
-
-.list .bx-menu{
-    display: none;
 }
 
 .list li:hover > .nav-link{
@@ -140,9 +150,10 @@ body{
 
 @media (max-width:600px) {
     .header{
-        height: 120px;
+        height: 100px;
         background: rgba(0, 0, 0, 0.5);
         padding: 0;
+        position: sticky;
     }
     .header #logoo{
         display: none;
@@ -150,23 +161,54 @@ body{
     .header #moblogo{
         display: block;
         width: 25vh;
-        padding: 12vw 0;
+        padding: 10vw 0;
         padding-left: 4vw;
     }
-
-    .header .list li{
-        position: relative;
-        list-style: none;
-        font-size: 2.5vw;
-        width: max-content;
-        letter-spacing: 1px;
-        display: none;
-    }
-
-    .header .list .bx-menu{
+    .header .hamburger{
         display: block;
-        font-size: 9vw;
-        padding-right: 4vw;
+        padding-right: 5vw;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .list{
+        position: fixed;
+        left: -100%;
+        top: 95px;
+        height: 300px;
+        width: 100%;
+        gap: 4vw;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        transition: 0.4s;
+    }
+    .header .list li{
+        display: block;
+        margin: 10px 0;
+        list-style: none;
+        font-size: 2.7vh;
+        width: 70%;
+        letter-spacing: 2px;
+        cursor:default;
+        border-bottom: 0.1px solid var(--white);
+    }
+    .nav-link{
+        padding: 5vw 0;
+        color: #fff;
+    }
+    .list.active{
+        left: 0;
+    }
+    .list li:hover::before{
+        display: none;
     }
 }
 /*HEADER SECTION COMPLETE*/
@@ -222,7 +264,6 @@ body{
 
 .para i{
     display: none;
-    margin-top: 3vh;
     font-size: 5vw;
 }
 
@@ -232,8 +273,9 @@ body{
     }
     .para{
         height: 70vh;
-        width: 100%;
-        padding: 7vw 5vh;
+        width: 80%;
+        padding: 5vw auto;
+        margin: auto;
     }
     .para h1{
         display: none;
@@ -244,14 +286,14 @@ body{
     .para p{
         font-size: 5vw;
         letter-spacing: 0.5rem;
-        margin-top: 13vh;
+        margin-top: 5vh;
         line-height: 7vh;
         text-align: center;
     }
     .para i{
         display: block;
-        margin-top: 3vh;
         font-size: 10vw;
+        margin: 16vw auto;
     }
 }
 
