@@ -65,6 +65,25 @@
     padding-bottom: 1px;
 }
 
+@media (max-width: 1024px) {
+    .nav-logo{
+        width: 90%;
+    }
+    .dock li .label{
+        display: none;
+    }
+    .east{
+        justify-content: flex-end;
+    }
+    .east li{
+        list-style-type: none;
+        margin: 0 1.5vw;
+    }
+    .east li i{
+        font-size: 14px;
+    }
+}
+
 /*NAVBAR COMPLETED*/
 /*CAROUSAL CSS*/
 .hero-carousel{
@@ -97,6 +116,18 @@
 .surface-laptop-text button:hover{
     background: var(--text-blue);
 }
+
+@media (max-width: 1024px){
+    .surface-laptop-text{
+        /*background: green;*/
+        top: 9vh;
+        left: 5%;
+        width: 400px;
+    }
+    .surface-laptop-text h1{
+        font-size: 28px;
+    }
+}
 /*CAROUSEL CSS COMPLETE*/
 /*ICONS-TRAY CSS BEGINS*/
 .icons-tray{
@@ -126,6 +157,7 @@
 .tools{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .tools-card{
     height: 400px;
@@ -138,14 +170,10 @@
     object-fit: cover;
     margin-bottom: 0.5vw;
 }
-.tools-card h3{
-    margin: 0.25vw;
-}
 .double{
     display: flex;
     flex-direction: column;
 }
-
 .tools-card a{
     position: relative;
     font-size: 16px;
@@ -165,6 +193,34 @@
 
 .tools-card a:hover > i{
     transform: translateX(5px);
+}
+
+@media (max-width: 1024px){
+    .tools{
+        width: 100%;
+    }
+    .tools-card{
+        height: 450px;
+        width: 400px;
+        margin: 0 10px;
+        flex-grow: 1;
+    }
+    .tools-card img{
+        width: 100%;
+        height: max-content;
+        margin: 1vw 0;
+    }
+    .tools-card h3{
+        font-size: 22px;
+    }
+    .double{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .double a:nth-child(2){
+        margin: 0 5vw;
+    }
 }
 /*AI INNOVATION CSS BEGINS*/
 .ai{
@@ -202,6 +258,23 @@
 }
 .overlay-text button:hover{
     background: var(--text-blue);
+}
+
+@media (max-width: 1024px){
+    .ai{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+    .overlay-text{
+        height: 300px;
+        width: 400px;
+        top: 4vw;
+        left: 5vw;
+    }
+    .overlay-text h2{
+        font-size: 32px;
+    }
 }
 /*AI INNOVATION CSS COMPLETE*/
 
@@ -253,6 +326,32 @@
     transform: translateX(5px);
 }
 
+@media (max-width:1024px) {
+    .business{
+        width: 100%;
+    }
+    .business h2{
+        margin: 2vw 1vw;
+        font-size: 20px;
+    }
+    .business-tray{
+        flex-wrap: wrap;
+    }
+    .business-card{
+        height: 450px;
+        width: 400px;
+        margin: 0 10px;
+        flex-grow: 1;
+    }
+    .business-card img{
+        width: 100%;
+        height: max-content;
+        margin: 1vw 0;
+    }
+    .business-card h3{
+        font-size: 22px;
+    }
+}
 /*AI BLUEPRINT CSS BEGINS*/
 .blueprint .overlay-text{
     background: #fff;
@@ -276,6 +375,18 @@
 .blueprint .overlay-text button:hover{
     background: var(--text-blue);
 }
+@media (max-width: 1024px){
+    .blueprint .overlay-text{
+        height: 300px;
+        width: 400px;
+        padding: 2.5vw;
+        top: 4.5vw;
+        left: 4vw;
+    }
+    .blueprint .overlay-text h2{
+        font-size: 32px;
+    }
+}
 /*AI BLUEPRINT CSS COMPLETES*/
 /*SOCIALS CSS BEGINS*/
 .socials{
@@ -293,6 +404,15 @@
     color: var(--text-color);
     font-size: 24px;
     margin:0 20px;
+}
+@media (max-width:1024px) {
+    .socials{
+        width: 100%;
+        margin: 2vw 10px;
+    }
+    .socials .follow{
+        margin-right: 0;
+    }
 }
 /*SOCIALS CSS COMPLETED*/
 /*BACK TO TOP BUTTON CSS BEGINS*/
@@ -361,6 +481,17 @@
 }
 .block li a{
     color:#616161;
+}
+@media (max-width: 1024px){
+    .footer{
+        flex-wrap: wrap;
+        height:max-content;
+        padding: 1vw 1vw;
+    }
+    .block{
+        height:270px;
+        width: 300px;
+    }
 }
 
 /*FOOTER CSS COMPLETE*/
