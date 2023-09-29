@@ -23,6 +23,9 @@
     display: flex;
     position: fixed;
 }
+.navbar .menu-icon{
+    display: none;
+}
 .microsoft-logo{
     height: 100%;
     width: 15%;
@@ -84,6 +87,43 @@
     }
 }
 
+@media (max-width: 768px){
+    .navbar .menu-icon{
+        display: block;
+        font-size: 20px;
+        position: relative;
+    }
+    .microsoft-logo{
+        height: 100%;
+        width: 60%;
+        display: flex;
+        padding-right: 0;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-logo{
+        width: 25%;
+        margin-left: 3vw;
+    }
+    .nav-menu-left{
+        display: none;
+    }
+    .nav-menu-right{
+        width: 9%;
+        font-size: 24px;
+    }
+    .east li:first-child{
+        display: none;
+    }
+    .east li:nth-child(2){
+        position: absolute;
+        left: 6vw;
+        top: 0;
+        font-size: 28px;
+    }
+}
+
 /*NAVBAR COMPLETED*/
 /*CAROUSAL CSS*/
 .hero-carousel{
@@ -128,6 +168,27 @@
         font-size: 28px;
     }
 }
+
+@media (max-width: 768px){
+    .surface-laptop-text{
+        top: 5vh;
+        left: 4%;
+        height: 175px;
+        width: 300px;
+    }
+    .surface-laptop-text h1{
+        font-size: 24px;
+    }
+    .surface-laptop-text p{
+        font-size: 14px;
+    }
+    .surface-laptop-text button{
+        height: 30px;
+        width: 90px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
 /*CAROUSEL CSS COMPLETE*/
 /*ICONS-TRAY CSS BEGINS*/
 .icons-tray{
@@ -151,6 +212,21 @@
 .tray-item a{
     font-size: 16px;
     font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .icons-tray{
+        flex-wrap: wrap;
+    }
+    .tray-item{
+        margin: 0 3vw;
+    }
+    .tray-image{
+        width: 30px;
+    }
+    .tray-item a{
+        font-size: 14px;
+    }
 }
 /*ICONS-TRAY CSS COMPLETE*/
 /*TOOLS LAYOUT CSS BEGINS*/
@@ -222,6 +298,21 @@
         margin: 0 5vw;
     }
 }
+
+@media (max-width: 768px){
+    .tools-card{
+        height: 375px;
+        width: 300px;
+        margin: 0 10px;
+        flex-grow: 1;
+    }
+    .tools-card h3{
+        font-size: 20px;
+    }
+    .tools-card p,.hyper{
+        font-size: 14px;
+    }
+}
 /*AI INNOVATION CSS BEGINS*/
 .ai{
     margin: auto;
@@ -274,6 +365,27 @@
     }
     .overlay-text h2{
         font-size: 32px;
+    }
+}
+
+@media (max-width: 768px){
+    .overlay-text{
+        height: 200px;
+        width: 330px;
+        top: 6vw;
+        left: 6vw;
+    }
+    .overlay-text h2{
+        font-size: 24px;
+    }
+    .overlay-text p{
+        font-size: 14px;
+    }
+    .overlay-text button{
+        height: 30px;
+        width: 90px;
+        font-size: 14px;
+        font-weight: 600;
     }
 }
 /*AI INNOVATION CSS COMPLETE*/
@@ -352,6 +464,29 @@
         font-size: 22px;
     }
 }
+
+@media (max-width: 768px){
+    .business-card{
+        height: 375px;
+        width: 300px;
+        margin: 0 10px;
+        flex-grow: 1;
+    }
+    .business-card h3{
+        font-size: 20px;
+    }
+    .business-card p,.hyper{
+        font-size: 14px;
+    }
+    .business-card img{
+        width: 100%;
+        height: max-content;
+        margin: 1vw 0;
+    }
+    .business-card p{
+        margin: 1.5vw 0;
+    }
+}
 /*AI BLUEPRINT CSS BEGINS*/
 .blueprint .overlay-text{
     background: #fff;
@@ -385,6 +520,27 @@
     }
     .blueprint .overlay-text h2{
         font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blueprint .overlay-text{
+        height: 250px;
+        width: 350px;
+        padding: 2vw;
+        top: 3vw;
+        left: 4vw;
+    }
+    .blueprint .overlay-text h2{
+        font-size: 22px;
+    }
+    .blueprint .overlay-text p{
+        font-size: 14px;
+    }
+    .blueprint .overlay-text button{
+        height: 35px;
+        width: 300px;
+        font-size: 14px;
     }
 }
 /*AI BLUEPRINT CSS COMPLETES*/
@@ -493,5 +649,19 @@
         width: 300px;
     }
 }
+
+@media (max-width: 768px) {
+    .footer{
+        height: 425px;
+        flex-wrap: wrap;
+        height:max-content;
+        padding: 1vw 1vw;
+    }
+    .block{
+        height: 270px;
+        width: 220px;
+    }
+}
+
 
 /*FOOTER CSS COMPLETE*/
