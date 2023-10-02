@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 :root{
@@ -15,6 +15,7 @@
 .main-container{
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -68,7 +69,7 @@
     padding-bottom: 1px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
     .nav-logo{
         width: 90%;
     }
@@ -189,6 +190,7 @@
         font-weight: 600;
     }
 }
+
 /*CAROUSEL CSS COMPLETE*/
 /*ICONS-TRAY CSS BEGINS*/
 .icons-tray{
@@ -652,16 +654,14 @@
 
 @media (max-width: 768px) {
     .footer{
-        height: 425px;
         flex-wrap: wrap;
         height:max-content;
         padding: 1vw 1vw;
     }
     .block{
-        height: 270px;
+        height: max-content;
         width: 220px;
     }
+    
 }
-
-
 /*FOOTER CSS COMPLETE*/
