@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+:root{
+    --text-color: #262626;
+    --button-background: #0067b8;
+    --text-blue: #005CA5;
+}
+.main-container{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+/*NAVBAR CSS BEGINS*/
+.microsoft-logo{
+    width: 50%;
+    margin-left: 13px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-logo{
+    width: 80%;
+    margin: 0;
+}
+.east li:nth-child(2){
+    position: absolute;
+    left: 45px;
+    top: 0;
+    font-size: 28px;
+    margin: 0 10px;
+}
+.nav-menu-right{
+    width: max-content;
+    font-size: 28px;
+    margin: 0;
+}
+.east li{
+    margin: 0 10px;
+}
+/*NAVBAR COMPLETE*/
+/*HERO CAROUSAL CSS BEGINS*/
+.hero-carousel{
+    height: 425px;
+    margin-bottom: 50px;
+}
+
+.d-block{
+    display: block;
+    margin-top: 50px;
+    transform: scale(2) translateX(-60px);
+}
+.surface-laptop-text{
+    display: block;
+    position: relative;
+    box-shadow: 0 0 1px gray;
+    left: 0;
+    top: 30;
+    background: #fff;
+    height: 250px;
+    width: 95%;
+    padding: 20px;
+    margin: 10px auto;
+}
+.surface-laptop-text h1{
+    font-size: 24px;
+    padding: 0;
+    margin: 10px 0;
+}
+.surface-laptop-text p{
+    font-size: 16px;
+    padding: 0;
+    margin: 10px 0;
+}
+.surface-laptop-text button{
+    height: 35px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+    margin: 10px 0;
+}
+.carousel-control-prev{
+    display: none;
+}
+.carousel-control-next{
+    display: none;
+}
+.carousel ol{
+    display: none;
+}
+/*HERO CAROUSAL CSS COMPLETE*/
+/*ICONS-TRAY CSS BEGINS*/
+/*ICONS-TRAY CSS COMPLETES*/
+.icons-tray{
+    height: max-content;
+    margin-bottom: 20px;
+}
+.icons-tray{
+    flex-wrap: wrap;
+}
+.tray-item{
+    margin: 2vw;
+}
+.tray-image{
+    width: 40px;
+}
+.tray-item a{
+    font-size: 16px;
+}
+/*TOOLS CSS BEGINS*/
+.tools-card h3{
+    margin: 10px 0;
+}
+.tools-card p{
+    margin: 10px 0;
+}
+.tools-card .hyper a{
+    font-size: 16px;
+}
+.double{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.double a:nth-child(2){
+    margin: 1vw 0;
+}
+/*TOOLS CSS COMPLETE*/
+/*AI INNOVATION CSS BEGINS*/
+.ai{
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+.ai img{
+    width: 100%;
+    margin: auto;
+    height: 120px;
+    transform: scale(1.5) translateX(-40px);
+    overflow-x: hidden;
+}
+.overlay-text{
+    display: block;
+    position: relative;
+    height: 320px;
+    width: 300px;
+    box-shadow: 0 0 1px gray;
+    left: 0;
+    top: 0;
+    background: #fff;
+    padding: 20px;
+    margin: 10px auto;
+}
+.overlay-text h2{
+    font-size: 24px;
+    padding: 0;
+    margin: 10px 0;
+}
+.overlay-text p{
+    font-size: 16px;
+}
+.overlay-text button{
+    height: 35px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 600;
+}
+/*AI INNOVATION CSS COMPLETES*/
+/*BUSINESS CARD CSS BEGINS*/
+.business{
+    height: max-content;
+}
+.business-card{
+    height: max-content;
+    width: 300px;
+    margin: 10px;
+    flex-grow: 1;
+}
+.business h2{
+    font-size: 24px;
+    color: #000;
+    padding: 2vw;
+    margin: 2vw 1vw;
+}
+.business-card h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.business-card p{
+    margin: 10px 0;
+}
+.business-card p,.hyper{
+    font-size: 14px;
+    margin: 10px 0;
+}
+.business-card img{
+    width: 100%;
+    height: max-content;
+    margin: 2vw 0;
+}
+.business-card p{
+    margin: 1.5vw 0;
+}
+/*BUSINESS CARD CSS COMPLETES*/
+/*AI BLUEPRINT CSS BEGINS*/
+.blueprint{
+    height: 450px;
+    margin: 50px 0;
+}
+.blueprint img{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    transform: scaleX(1.5) translateX(-40px);
+    overflow-x: hidden;
+}
+.blueprint .overlay-text{
+    display: block;
+    height: 270px;
+    width: 100%;
+    background: transparent;
+    left: 0;
+    padding: 10px;
+    margin: 10px auto;
+}
+.blueprint .overlay-text h2{
+    font-size: 24px;
+    padding: 0;
+    margin: 10px 0;
+}
+.blueprint .overlay-text p{
+    font-size: 14px;
+    margin: 10px 0;
+}
+.blueprint .overlay-text button{
+    text-align: left;
+    height: 55px;
+    width: 250px;
+    font-size: 16px;
+    line-height: 15px;
+    padding: 10px;
+    margin: 15px 0;
+}
+/*AI BLUEPRINT CSS COMPLETES*/
+/*SOCIALS CSS BEGINS*/
+.socials{
+    height: 50px;
+    width: 90%;
+    margin: 3vw auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+}
+.socials .follow{
+    font-weight: 600;
+    margin-right: 40px;
+    margin-top: 0;
+}
+.socials i{
+    color: var(--text-color);
+    font-size: 20px;
+    margin:0 10px;
+}
+/*SOCIALS CSS COMPLETES*/
+/*BACK TO TOP CSS BEGINS*/
+.scrollTop{
+    height: 30px;
+    width: 90px;
+    bottom: 20px;
+    right: 20px;
+}
+.scrollTop p{
+    font-size: 10px;
+    padding-top: 15px;
+    padding-left: 5px;
+    color: #000;
+}
+.scrollTop i{
+    font-size: 14px;
+}
+/*FOOTER CSS BEGINS*/
+.footer{
+    width: 100%;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height:max-content;
+    padding: 10px;
+}
+.block{
+    height: max-content;
+    width: 250px;
+    padding: 0;
+    margin: 10px 0;
+}
+.block h6{
+    font-size: 16px;
+    padding: 1vw 0;
+}
+.block li{
+    list-style: none;
+    font-size: 11px;
+    padding: 7px 0;
+}

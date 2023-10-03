@@ -111,8 +111,8 @@
         display: none;
     }
     .nav-menu-right{
-        width: 9%;
-        font-size: 24px;
+        width: max-content;
+        font-size: 28px;
     }
     .east li:first-child{
         display: none;
@@ -413,12 +413,11 @@
 .business-card img{
     width: 315px;
     object-fit: cover;
-    margin-bottom: 0.25vw 0;
+    margin-bottom: 0.25vw;
 }
 .business-card h3{
     margin: 1vw 0;
 }
-
 .business-card a{
     position: relative;
     font-size: 16px;
