@@ -22,7 +22,6 @@
     display: flex;
     align-items: flex-end;
 }
-
 .nav-logo{
     width: 80%;
     margin: 0;
@@ -104,10 +103,10 @@
     flex-wrap: wrap;
 }
 .tray-item{
-    margin: 2vw;
+    margin: 3vw;
 }
 .tray-image{
-    width: 40px;
+    width: 50px;
 }
 .tray-item a{
     font-size: 16px;
@@ -147,8 +146,8 @@
 .overlay-text{
     display: block;
     position: relative;
-    height: 320px;
-    width: 300px;
+    height: 300px;
+    width: 350px;
     box-shadow: 0 0 1px gray;
     left: 0;
     top: 0;
@@ -259,7 +258,7 @@
 }
 .socials .follow{
     font-weight: 600;
-    margin-right: 40px;
+    margin-right: 90px;
     margin-top: 0;
 }
 .socials i{
@@ -297,7 +296,7 @@
 }
 .block{
     height: max-content;
-    width: 250px;
+    width: 300px;
     padding: 0;
     margin: 10px 0;
 }
