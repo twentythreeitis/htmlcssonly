@@ -44,7 +44,7 @@
 /*NAVBAR COMPLETE*/
 /*HERO CAROUSAL CSS BEGINS*/
 .hero-carousel{
-    height: 425px;
+    height: 475px;
     margin-bottom: 50px;
 }
 
@@ -56,11 +56,10 @@
 .surface-laptop-text{
     display: block;
     position: relative;
-    box-shadow: 0 0 1px gray;
     left: 0;
-    top: 30;
+    top: 60px;
     background: #fff;
-    height: 250px;
+    height: 270px;
     width: 95%;
     padding: 20px;
     margin: 10px auto;
@@ -103,6 +102,7 @@
     flex-wrap: wrap;
 }
 .tray-item{
+    width: 300px;
     margin: 3vw;
 }
 .tray-image{
@@ -148,11 +148,9 @@
     position: relative;
     height: 300px;
     width: 350px;
-    box-shadow: 0 0 1px gray;
     left: 0;
-    top: 0;
-    background: #fff;
-    padding: 20px;
+    top: 50;
+    padding: 20px 0;
     margin: 10px auto;
 }
 .overlay-text h2{
@@ -237,9 +235,9 @@
     margin: 10px 0;
 }
 .blueprint .overlay-text button{
-    text-align: left;
+    text-align: center;
     height: 55px;
-    width: 250px;
+    width: 100%;
     font-size: 16px;
     line-height: 15px;
     padding: 10px;
@@ -264,7 +262,11 @@
 .socials i{
     color: var(--text-color);
     font-size: 20px;
-    margin:0 10px;
+    margin:0;
+    margin-right: 20px;
+}
+.socials i:nth-child(2){
+    margin-left: 20px;
 }
 /*SOCIALS CSS COMPLETES*/
 /*BACK TO TOP CSS BEGINS*/
